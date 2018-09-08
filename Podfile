@@ -6,6 +6,8 @@ platform :ios, '9.0'
 target 'gtownradio' do
 
 	pod 'FRadioPlayer'
+	pod 'Fuzi'
+	pod 'AlamoFire'
 
 end
 
