@@ -7,7 +7,7 @@ target 'gtownradio' do
 
 	pod 'FRadioPlayer'
 	pod 'Fuzi'
-	pod 'AlamoFire'
+	pod 'Alamofire'
 
 end
 
