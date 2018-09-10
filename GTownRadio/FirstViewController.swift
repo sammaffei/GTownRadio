@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Alamofire
+import AlamoFuzi
 
 class FirstViewController: UIViewController {
-
+                
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let _ = NowPlayingTask.shared
+
     }
 
     override func didReceiveMemoryWarning() {
