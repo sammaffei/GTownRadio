@@ -8,7 +8,6 @@ target 'gtownradio' do
 	pod 'FRadioPlayer'
 	pod 'Alamofire'
 	pod 'AlamoFuzi'
-    	pod 'iTunesSearch'
 
 end
 
