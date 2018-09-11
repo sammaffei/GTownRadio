@@ -8,6 +8,7 @@
 
 import Alamofire
 import AlamoFuzi
+import iTunesSearch
 
 struct NowPlayingInfo
     {
@@ -15,7 +16,6 @@ struct NowPlayingInfo
     var artist : String = ""
     var album : String = ""
     var duration : Int = 0
-    
     }
 
 
@@ -27,6 +27,18 @@ class NowPlayingTask
     
     var timer: Timer?
     var contentLength : Int = 0
+    
+    var curNowPlaying : NowPlayingInfo? = nil
+        {
+        didSet
+            {
+            var i = 1
+                
+            // call itunes search api
+                
+            
+            }
+        }
     
     func getGTownNowPlayingInfo()
         {
@@ -46,18 +58,14 @@ class NowPlayingTask
                     {
                     let artistTitleComps = artistTitleNode.stringValue.components(separatedBy: " - ")
                         
-                    switch artistTitleComps.count
+                    if artistTitleComps.count >= 2
                         {
-                        case 2:
-                            newNowPlaying.artist = artistTitleComps[0]
-                            newNowPlaying.song = artistTitleComps[1]
-                        case 3 :
-                            newNowPlaying.artist = artistTitleComps[0]
-                            
-                            newNowPlaying.song = artistTitleComps[1] + " - " + artistTitleComps[2]
-                        default:
-                            newNowPlaying.artist = artistTitleNode.stringValue
-
+                        newNowPlaying.artist = artistTitleComps[0]
+                        newNowPlaying.song = artistTitleComps[1]
+                        }
+                    else
+                        {
+                        newNowPlaying.artist = artistTitleNode.stringValue
                         }
                         
                     if let albumNameNode = baseNode.xpath("./td[5]/font/small").first
@@ -76,6 +84,8 @@ class NowPlayingTask
                             newNowPlaying.duration = (durMins * 60) + durSecs
                             }
                         }
+                        
+                    self.curNowPlaying = newNowPlaying
                     }
                 }
             }
