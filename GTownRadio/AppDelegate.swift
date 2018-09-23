@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FRadioPlayer
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FRadioPlayer.shared.isAutoPlay = false
+        FRadioPlayer.shared.radioURL = URL(string: "http://www.gtownradio.com/gtown_hi.m3u")
+        
         return true
     }
 

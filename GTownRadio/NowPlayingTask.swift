@@ -8,7 +8,7 @@
 
 import Alamofire
 import AlamoFuzi
-import iTunesSearch
+import iTunesSearchAPI
 
 struct NowPlayingInfo
     {
@@ -25,20 +25,10 @@ class NowPlayingTask
     
     static let shared = NowPlayingTask()
     
-    var timer: Timer?
-    var contentLength : Int = 0
+    fileprivate var timer: Timer?
+    fileprivate var contentLength : Int = 0
     
     var curNowPlaying : NowPlayingInfo? = nil
-        {
-        didSet
-            {
-            var i = 1
-                
-            // call itunes search api
-                
-            
-            }
-        }
     
     func getGTownNowPlayingInfo()
         {
@@ -87,6 +77,17 @@ class NowPlayingTask
                         
                     self.curNowPlaying = newNowPlaying
                     }
+                    
+                    
+                  //  let albumInfo = NowPlayingInfo(song: "", artist: "Robert Palmer", album: "Riptide", duration: 200)
+                    
+                    guard let albumInfo = self.curNowPlaying
+                        else {return}
+                    
+                    LastFM().loadAlbumArt(nowInfo: albumInfo, loadCompl:
+                        { (fetchedImage : UIImage) in
+                        var p = 2
+                        })
                 }
             }
         }

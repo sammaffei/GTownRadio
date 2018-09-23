@@ -9,14 +9,42 @@
 import UIKit
 import Alamofire
 import AlamoFuzi
+import FRadioPlayer
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, FRadioPlayerDelegate {
+    
+    func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
+        
+    }
+    
+    func radioPlayer(_ player: FRadioPlayer, playbackStateDidChange state: FRadioPlaybackState) {
+        
+    }
+
+    
+    @IBAction func togglePlaying(sender: UIButton)
+        {
+        if FRadioPlayer.shared.isPlaying
+            {
+            FRadioPlayer.shared.pause()
+            sender.setTitle("Play".localized(), for: .normal)
+            }
+        else
+            {
+    
+            FRadioPlayer.shared.play()
+            sender.setTitle("Stop".localized(), for: .normal)
+            }
+            
+        }
                 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let _ = NowPlayingTask.shared
+        
+        FRadioPlayer.shared.delegate = self
 
     }
 
