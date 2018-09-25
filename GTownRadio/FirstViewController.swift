@@ -13,6 +13,8 @@ import FRadioPlayer
 
 class FirstViewController: UIViewController, FRadioPlayerDelegate {
     
+    var nowPlayingVC : NowPlayingViewController?
+    
     func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
         
     }
@@ -31,10 +33,11 @@ class FirstViewController: UIViewController, FRadioPlayerDelegate {
             }
         else
             {
-    
             FRadioPlayer.shared.play()
             sender.setTitle("Stop".localized(), for: .normal)
             }
+            
+        nowPlayingVC?.isPlaying = FRadioPlayer.shared.isPlaying
             
         }
                 
@@ -51,6 +54,22 @@ class FirstViewController: UIViewController, FRadioPlayerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        switch segue.identifier
+            {
+            case "NowPlayingEmbedID":
+                if let nPVC = segue.destination as? NowPlayingViewController
+                    {
+                    nowPlayingVC =  nPVC
+                    }
+            
+            
+            default:
+                break
+            }
     }
 
 

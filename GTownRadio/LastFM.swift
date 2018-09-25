@@ -13,7 +13,8 @@ import Fuzi
 
 class LastFM
     {
-    typealias LoadedImageComp = (UIImage) -> Void
+    typealias LoadedImageComp = (UIImage?) -> Void
+    typealias LoadedImageError = (Error)->Void
     
     fileprivate static let sLastFMAPIKey = "60df14af04089c099235c73042b2fad9"
     
@@ -76,8 +77,8 @@ class LastFM
 
                                 }
                         
-                        case .failure(let error):
-                            break
+                        case .failure(let _):
+                            loadCompl(nil)
                         }
                     }
             }

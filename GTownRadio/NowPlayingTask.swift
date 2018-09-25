@@ -21,6 +21,8 @@ struct NowPlayingInfo
 
 class NowPlayingTask
     {
+    typealias NowPlayingUpdated = (NowPlayingInfo?) -> Void
+
     // MARK: - Properties
     
     static let shared = NowPlayingTask()
@@ -29,6 +31,8 @@ class NowPlayingTask
     fileprivate var contentLength : Int = 0
     
     var curNowPlaying : NowPlayingInfo? = nil
+    
+    fileprivate var listeners : [NowPlayingUpdated] = []
     
     func getGTownNowPlayingInfo()
         {
@@ -76,18 +80,12 @@ class NowPlayingTask
                         }
                         
                     self.curNowPlaying = newNowPlaying
+                        
+                    for aListener in self.listeners
+                        {
+                        aListener(newNowPlaying)
+                        }
                     }
-                    
-                    
-                  //  let albumInfo = NowPlayingInfo(song: "", artist: "Robert Palmer", album: "Riptide", duration: 200)
-                    
-                    guard let albumInfo = self.curNowPlaying
-                        else {return}
-                    
-                    LastFM().loadAlbumArt(nowInfo: albumInfo, loadCompl:
-                        { (fetchedImage : UIImage) in
-                        var p = 2
-                        })
                 }
             }
         }
@@ -127,7 +125,16 @@ class NowPlayingTask
         getHeadInfoForNowPlaying()
         }
     
-
+    
+    func addListener(playInfoListener : @escaping NowPlayingUpdated)
+        {
+        listeners.append(playInfoListener)
+        }
+    
+    func clearListeners()
+        {
+        listeners = []
+        }
     
     init()
         {

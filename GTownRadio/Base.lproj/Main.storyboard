@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="319" id="3oD-4o-78v"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="tTn-iN-6x3" kind="embed" id="AWb-RW-jT7"/>
+                                    <segue destination="tTn-iN-6x3" kind="embed" identifier="NowPlayingEmbedID" id="AWb-RW-jT7"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-20-8CS">
@@ -110,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Now PlayingVC-->
+        <!--Now Playing View Controller-->
         <scene sceneID="j72-hN-i31">
             <objects>
-                <viewController id="tTn-iN-6x3" customClass="NowPlayingVC" customModule="gtownradio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tTn-iN-6x3" customClass="NowPlayingViewController" customModule="gtownradio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CY1-Dp-oyE">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="319"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
