@@ -24,17 +24,17 @@ class FirstViewController: UIViewController, FRadioPlayerDelegate {
     }
 
     
-    @IBAction func togglePlaying(sender: UIButton)
+    @IBAction func togglePlaying(sender: SVGPlayButton)
         {
         if FRadioPlayer.shared.isPlaying
             {
             FRadioPlayer.shared.pause()
-            sender.setTitle("Play".localized(), for: .normal)
+            sender.playing = false
             }
         else
             {
             FRadioPlayer.shared.play()
-            sender.setTitle("Stop".localized(), for: .normal)
+            sender.playing = true
             }
             
         nowPlayingVC?.isPlaying = FRadioPlayer.shared.isPlaying

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="gtownradio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvf-Cg-fg0">
-                                <rect key="frame" x="16" y="41" width="343" height="319"/>
+                                <rect key="frame" x="16" y="41" width="288" height="319"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="319" id="3oD-4o-78v"/>
                                 </constraints>
@@ -27,25 +27,24 @@
                                     <segue destination="tTn-iN-6x3" kind="embed" identifier="NowPlayingEmbedID" id="AWb-RW-jT7"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-20-8CS">
-                                <rect key="frame" x="150" y="414" width="74" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-20-8CS" customClass="SVGPlayButton" customModule="gtownradio" customModuleProvider="target">
+                                <rect key="frame" x="135" y="381" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="NBH-fE-Jze"/>
-                                    <constraint firstAttribute="height" constant="30" id="UsZ-Pp-z8O"/>
+                                    <constraint firstAttribute="height" constant="50" id="MSZ-zR-rqe"/>
+                                    <constraint firstAttribute="width" constant="50" id="zIf-a7-nSL"/>
                                 </constraints>
-                                <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="togglePlayingWithSender:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jJW-eq-LVi"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.82248364240000005" blue="0.46491553000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="rvf-Cg-fg0" secondAttribute="trailing" constant="16" id="1vS-7M-HJe"/>
                             <constraint firstItem="rvf-Cg-fg0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="5Zs-JF-qnb"/>
+                            <constraint firstItem="FAN-20-8CS" firstAttribute="top" secondItem="rvf-Cg-fg0" secondAttribute="bottom" constant="21" id="Htk-4F-k38"/>
                             <constraint firstItem="rvf-Cg-fg0" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="21" id="Pk9-5y-Aam"/>
-                            <constraint firstItem="FAN-20-8CS" firstAttribute="top" secondItem="rvf-Cg-fg0" secondAttribute="bottom" constant="54" id="gPU-zy-PDS"/>
-                            <constraint firstItem="FAN-20-8CS" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="vGU-dW-lqn"/>
+                            <constraint firstItem="FAN-20-8CS" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="UPc-c1-qej"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -60,18 +59,18 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="gtownradio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="87" y="312" width="201.5" height="43"/>
+                                <rect key="frame" x="59.5" y="262.5" width="201.5" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="363" width="215" height="17"/>
+                                <rect key="frame" x="52.5" y="313.5" width="215" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -115,11 +114,11 @@
             <objects>
                 <viewController id="tTn-iN-6x3" customClass="NowPlayingViewController" customModule="gtownradio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CY1-Dp-oyE">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="319"/>
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="319"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aPN-D7-dTw">
-                                <rect key="frame" x="82" y="32" width="180" height="180"/>
+                                <rect key="frame" x="54" y="32" width="180" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="1zo-GD-1rH"/>
@@ -127,7 +126,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJs-jo-b0a">
-                                <rect key="frame" x="16" y="251" width="311" height="21"/>
+                                <rect key="frame" x="16" y="251" width="256" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="oSv-Ll-WE2"/>
                                 </constraints>
@@ -136,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-2P-4uo">
-                                <rect key="frame" x="16" y="278" width="311" height="21"/>
+                                <rect key="frame" x="16" y="278" width="256" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5ek-l4-CjR"/>
                                 </constraints>

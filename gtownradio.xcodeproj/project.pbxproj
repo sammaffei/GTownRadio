@@ -16,6 +16,8 @@
 		4B3019562143059A00DD05D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3019542143059A00DD05D4 /* LaunchScreen.storyboard */; };
 		4B417D8E2157D7F5008F2262 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8D2157D7F5008F2262 /* StringExtension.swift */; };
 		4B417D90215804CB008F2262 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */; };
+		4B809169215B09A000C09471 /* SVGPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B809165215B09A000C09471 /* SVGPlayButton.swift */; };
+		4B80916A215B09A000C09471 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4B809166215B09A000C09471 /* README.md */; };
 		4BE9195D2147294F0034E739 /* NowPlayingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9195C2147294F0034E739 /* NowPlayingTask.swift */; };
 		67516C37F208B52FE7E0FDBE /* libPods-gtownradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7F5E542F06118C03170EAE /* libPods-gtownradio.a */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,8 @@
 		4B3019572143059A00DD05D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B417D8D2157D7F5008F2262 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = GTownRadio/StringExtension.swift; sourceTree = SOURCE_ROOT; };
 		4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingViewController.swift; path = GTownRadio/NowPlayingViewController.swift; sourceTree = SOURCE_ROOT; };
+		4B809165215B09A000C09471 /* SVGPlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPlayButton.swift; sourceTree = "<group>"; };
+		4B809166215B09A000C09471 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4BE9195C2147294F0034E739 /* NowPlayingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingTask.swift; path = GTownRadio/NowPlayingTask.swift; sourceTree = SOURCE_ROOT; };
 		9F7F5E542F06118C03170EAE /* libPods-gtownradio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtownradio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CD60744FDD7272A367F6D5 /* Pods-gtownradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		4B3019482143059800DD05D4 /* gtownradio */ = {
 			isa = PBXGroup;
 			children = (
+				4B809164215B09A000C09471 /* SVGPlayButton */,
 				4B2E98CE21582C9900DB8B2C /* Assets.xcassets */,
 				4BE9195C2147294F0034E739 /* NowPlayingTask.swift */,
 				4B0B6A6A2148983F008F1020 /* LastFM.swift */,
@@ -85,6 +90,16 @@
 			);
 			path = gtownradio;
 			sourceTree = "<group>";
+		};
+		4B809164215B09A000C09471 /* SVGPlayButton */ = {
+			isa = PBXGroup;
+			children = (
+				4B809165215B09A000C09471 /* SVGPlayButton.swift */,
+				4B809166215B09A000C09471 /* README.md */,
+			);
+			name = SVGPlayButton;
+			path = GTownRadio/SVGPlayButton;
+			sourceTree = SOURCE_ROOT;
 		};
 		71D616BA8664C8A604A81E37 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -136,6 +151,11 @@
 				TargetAttributes = {
 					4B3019452143059800DD05D4 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -164,6 +184,7 @@
 			files = (
 				4B3019562143059A00DD05D4 /* LaunchScreen.storyboard in Resources */,
 				4B2E98CF21582C9900DB8B2C /* Assets.xcassets in Resources */,
+				4B80916A215B09A000C09471 /* README.md in Resources */,
 				4B3019512143059800DD05D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B809169215B09A000C09471 /* SVGPlayButton.swift in Sources */,
 				4B30194E2143059800DD05D4 /* SecondViewController.swift in Sources */,
 				4B30194A2143059800DD05D4 /* AppDelegate.swift in Sources */,
 				4B417D8E2157D7F5008F2262 /* StringExtension.swift in Sources */,
