@@ -24,6 +24,8 @@ class NowPlayingViewController : UIViewController
             }
         }
     
+    fileprivate var missingArtworkImage : UIImage?
+    
     fileprivate func setNotPlayingInfoUI()
         {
         trackLabel.text = "Not Playing".localized()
@@ -39,7 +41,8 @@ class NowPlayingViewController : UIViewController
     
         LastFM().loadAlbumArt(nowInfo: playInfo, loadCompl:
             { (fetchedImage : UIImage?) in
-            self.albumArtImageView.image = fetchedImage
+                
+            self.albumArtImageView.image = fetchedImage ?? self.missingArtworkImage
                 
             self.trackLabel.text = playInfo.song             // Do this after image fetch so text doesn't change before image
             self.artistLabel.text = playInfo.artist
@@ -62,6 +65,9 @@ class NowPlayingViewController : UIViewController
     
     
     override func viewDidLoad() {
+        
+        missingArtworkImage = UIImage(named: "MissingAlbumArtwork")   // Preload this and keep it around
+        
         NowPlayingTask.shared.addListener
             { (nowPlayInfo) in
             self.updateNowPlayingUI()

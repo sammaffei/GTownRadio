@@ -58,23 +58,27 @@ class LastFM
                         {
                         case .success(let value):
                             
-                            if let bestImageURL = self.getBestQualityImageURL(xmlDoc : value)
-                                {
-                                // Use Alamofire to download the image
-                                Alamofire.request(bestImageURL).responseData
-                                    { (response) in
-                                        if response.error == nil
-                                            {
-                                            if let data = response.data,
-                                                let loadedImage = UIImage(data: data)
-                                                {
-                                                // Give complettion
-                                                    
-                                                loadCompl(loadedImage)
-                                                }
-                                            }
+                            guard let bestImageURL = self.getBestQualityImageURL(xmlDoc : value)
+                                else
+                                    {
+                                    loadCompl(nil)
+                                        
+                                    return
                                     }
-
+                            
+                            // Use Alamofire to download the image
+                            Alamofire.request(bestImageURL).responseData
+                                { (response) in
+                                    if response.error == nil
+                                        {
+                                        if let data = response.data,
+                                            let loadedImage = UIImage(data: data)
+                                            {
+                                            // Give complettion
+                                                
+                                            loadCompl(loadedImage)
+                                            }
+                                        }
                                 }
                         
                         case .failure(let _):
