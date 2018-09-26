@@ -38,16 +38,25 @@ class NowPlayingViewController : UIViewController
         guard let playInfo = NowPlayingTask.shared.curNowPlaying
             else {return}
             
-    
-        LastFM().loadAlbumArt(nowInfo: playInfo, loadCompl:
-            { (fetchedImage : UIImage?) in
-                
-            self.albumArtImageView.image = fetchedImage ?? self.missingArtworkImage
-                
-            self.trackLabel.text = playInfo.song             // Do this after image fetch so text doesn't change before image
-            self.artistLabel.text = playInfo.artist
-            })
-    
+        switch playInfo.contentType
+            {
+            case .promo:
+                trackLabel.text = playInfo.song
+                artistLabel.text = playInfo.artist
+            case .show:
+                trackLabel.text = playInfo.song
+                artistLabel.text = playInfo.artist
+            case .song:
+                LastFM().loadAlbumArt(nowInfo: playInfo, loadCompl:
+                    { (fetchedImage : UIImage?) in
+                        
+                        self.albumArtImageView.image = fetchedImage ?? self.missingArtworkImage
+                        
+                        self.trackLabel.text = playInfo.song             // Do this after image fetch so text doesn't change before image
+                        self.artistLabel.text = playInfo.artist
+                })
+
+            }
         }
     
     func updateNowPlayingUI()

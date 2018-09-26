@@ -11,10 +11,30 @@ import AlamoFuzi
 
 struct NowPlayingInfo
     {
+    enum GTContentType {
+        case song
+        case promo
+        case show
+    }
+    
     var song : String = ""
     var artist : String = ""
     var album : String = ""
     var duration : Int = 0
+    
+    var contentType : GTContentType
+        {
+        switch duration
+            {
+            case ..<30:
+                return .promo
+            case 600...:
+                return .show
+            default:
+                return .song
+            }
+        }
+    
     }
 
 
