@@ -8,7 +8,6 @@
 
 import Alamofire
 import AlamoFuzi
-import iTunesSearchAPI
 
 struct NowPlayingInfo
     {
