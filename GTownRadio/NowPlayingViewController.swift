@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 class NowPlayingViewController : UIViewController
     {
@@ -25,6 +26,8 @@ class NowPlayingViewController : UIViewController
         }
     
     fileprivate var missingArtworkImage : UIImage?
+    fileprivate var loadingAnimatedImage : UIImage?
+
     
     fileprivate func setNotPlayingInfoUI()
         {
@@ -72,10 +75,17 @@ class NowPlayingViewController : UIViewController
 
         }
     
+    func showLoadingUI()
+        {
+        albumArtImageView.image = loadingAnimatedImage
+        trackLabel.text = "Loading".localized()
+        artistLabel.text = nil
+        }
     
     override func viewDidLoad() {
         
         missingArtworkImage = UIImage(named: "MissingAlbumArtwork")   // Preload this and keep it around
+        loadingAnimatedImage = UIImage.gif(name: "loading")
         
         NowPlayingTask.shared.addListener
             { (nowPlayInfo) in

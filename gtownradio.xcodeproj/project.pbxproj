@@ -16,6 +16,7 @@
 		4B3019562143059A00DD05D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3019542143059A00DD05D4 /* LaunchScreen.storyboard */; };
 		4B417D8E2157D7F5008F2262 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8D2157D7F5008F2262 /* StringExtension.swift */; };
 		4B417D90215804CB008F2262 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */; };
+		4B4C9DD62177A62900EB99A4 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C9DD42177A62900EB99A4 /* loading.gif */; };
 		4B809169215B09A000C09471 /* SVGPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B809165215B09A000C09471 /* SVGPlayButton.swift */; };
 		4B80916A215B09A000C09471 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4B809166215B09A000C09471 /* README.md */; };
 		4BE9195D2147294F0034E739 /* NowPlayingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9195C2147294F0034E739 /* NowPlayingTask.swift */; };
@@ -35,6 +36,7 @@
 		4B3019572143059A00DD05D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B417D8D2157D7F5008F2262 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = GTownRadio/StringExtension.swift; sourceTree = SOURCE_ROOT; };
 		4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingViewController.swift; path = GTownRadio/NowPlayingViewController.swift; sourceTree = SOURCE_ROOT; };
+		4B4C9DD52177A62900EB99A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Base; path = GTownRadio/Base.lproj/loading.gif; sourceTree = SOURCE_ROOT; };
 		4B809165215B09A000C09471 /* SVGPlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPlayButton.swift; sourceTree = "<group>"; };
 		4B809166215B09A000C09471 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4BE9195C2147294F0034E739 /* NowPlayingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingTask.swift; path = GTownRadio/NowPlayingTask.swift; sourceTree = SOURCE_ROOT; };
@@ -85,6 +87,7 @@
 				4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */,
 				4B30194F2143059800DD05D4 /* Main.storyboard */,
 				4B3019542143059A00DD05D4 /* LaunchScreen.storyboard */,
+				4B4C9DD42177A62900EB99A4 /* loading.gif */,
 				4B3019572143059A00DD05D4 /* Info.plist */,
 				4B417D8D2157D7F5008F2262 /* StringExtension.swift */,
 			);
@@ -184,6 +187,7 @@
 			files = (
 				4B3019562143059A00DD05D4 /* LaunchScreen.storyboard in Resources */,
 				4B2E98CF21582C9900DB8B2C /* Assets.xcassets in Resources */,
+				4B4C9DD62177A62900EB99A4 /* loading.gif in Resources */,
 				4B80916A215B09A000C09471 /* README.md in Resources */,
 				4B3019512143059800DD05D4 /* Main.storyboard in Resources */,
 			);
@@ -245,6 +249,14 @@
 				4B3019552143059A00DD05D4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4B4C9DD42177A62900EB99A4 /* loading.gif */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B4C9DD52177A62900EB99A4 /* Base */,
+			);
+			name = loading.gif;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

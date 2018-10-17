@@ -33,6 +33,7 @@ class FirstViewController: UIViewController, FRadioPlayerDelegate {
             }
         else
             {
+            nowPlayingVC?.showLoadingUI()
             FRadioPlayer.shared.play()
             sender.playing = true
             }
