@@ -46,9 +46,11 @@ class NowPlayingViewController : UIViewController
             case .promo:
                 trackLabel.text = playInfo.song
                 artistLabel.text = playInfo.artist
+                albumArtImageView.image = nil
             case .show:
                 trackLabel.text = playInfo.song
                 artistLabel.text = playInfo.artist
+                albumArtImageView.image = nil
             case .song:
                 LastFM().loadAlbumArt(nowInfo: playInfo, loadCompl:
                     { (fetchedImage : UIImage?) in
