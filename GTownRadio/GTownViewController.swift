@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  GTownViewController.swift
 //  gtownradio
 //
 //  Created by Samuel Maffei on 9/7/18.
@@ -11,7 +11,7 @@ import Alamofire
 import AlamoFuzi
 import FRadioPlayer
 
-class FirstViewController: UIViewController, FRadioPlayerDelegate {
+class GTownViewController: UIViewController, FRadioPlayerDelegate {
     
     var nowPlayingVC : NowPlayingViewController?
     
