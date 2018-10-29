@@ -19,6 +19,7 @@
 		4B809169215B09A000C09471 /* SVGPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B809165215B09A000C09471 /* SVGPlayButton.swift */; };
 		4B80916A215B09A000C09471 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4B809166215B09A000C09471 /* README.md */; };
 		4B8A019321865C2B00DFFAB9 /* LightNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A019221865C2B00DFFAB9 /* LightNavController.swift */; };
+		4B8A01952186631300DFFAB9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8A01942186631300DFFAB9 /* MediaPlayer.framework */; };
 		4BE9195D2147294F0034E739 /* NowPlayingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9195C2147294F0034E739 /* NowPlayingTask.swift */; };
 		67516C37F208B52FE7E0FDBE /* libPods-gtownradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7F5E542F06118C03170EAE /* libPods-gtownradio.a */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		4B809165215B09A000C09471 /* SVGPlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPlayButton.swift; sourceTree = "<group>"; };
 		4B809166215B09A000C09471 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4B8A019221865C2B00DFFAB9 /* LightNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LightNavController.swift; path = GTownRadio/LightNavController.swift; sourceTree = SOURCE_ROOT; };
+		4B8A01942186631300DFFAB9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4BE9195C2147294F0034E739 /* NowPlayingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingTask.swift; path = GTownRadio/NowPlayingTask.swift; sourceTree = SOURCE_ROOT; };
 		9F7F5E542F06118C03170EAE /* libPods-gtownradio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtownradio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CD60744FDD7272A367F6D5 /* Pods-gtownradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8A01952186631300DFFAB9 /* MediaPlayer.framework in Frameworks */,
 				67516C37F208B52FE7E0FDBE /* libPods-gtownradio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +110,7 @@
 		71D616BA8664C8A604A81E37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B8A01942186631300DFFAB9 /* MediaPlayer.framework */,
 				9F7F5E542F06118C03170EAE /* libPods-gtownradio.a */,
 			);
 			name = Frameworks;
