@@ -27,13 +27,14 @@ class NowPlayingViewController : UIViewController
     
     fileprivate var missingArtworkImage : UIImage?
     fileprivate var loadingAnimatedImage : UIImage?
+    fileprivate var defaultBackgroundImage : UIImage?
 
     
     fileprivate func setNotPlayingInfoUI()
         {
         trackLabel.text = "Not Playing".localized()
         artistLabel.text = ""
-        albumArtImageView.image = nil
+        albumArtImageView.image = defaultBackgroundImage
         }
     
     fileprivate func setPlayingInfoUI()
@@ -46,11 +47,11 @@ class NowPlayingViewController : UIViewController
             case .promo:
                 trackLabel.text = playInfo.song
                 artistLabel.text = playInfo.artist
-                albumArtImageView.image = nil
+                albumArtImageView.image = defaultBackgroundImage
             case .show:
                 trackLabel.text = playInfo.song
                 artistLabel.text = playInfo.artist
-                albumArtImageView.image = nil
+                albumArtImageView.image = defaultBackgroundImage
             case .song:
                 LastFM().loadAlbumArt(nowInfo: playInfo, loadCompl:
                     { (fetchedImage : UIImage?) in
@@ -87,7 +88,10 @@ class NowPlayingViewController : UIViewController
     override func viewDidLoad() {
         
         missingArtworkImage = UIImage(named: "MissingAlbumArtwork")   // Preload this and keep it around
+        defaultBackgroundImage = UIImage(named: "defaultplayerback")
         loadingAnimatedImage = UIImage.gif(name: "loading")
+        
+        albumArtImageView.image = defaultBackgroundImage
         
         NowPlayingTask.shared.addListener
             { (nowPlayInfo) in

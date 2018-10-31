@@ -11,6 +11,8 @@ import Alamofire
 import AlamoFuzi
 import FRadioPlayer
 
+import MediaPlayer
+
 class GTownViewController: UIViewController, FRadioPlayerDelegate {
     
     var nowPlayingVC : NowPlayingViewController?
