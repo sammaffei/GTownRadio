@@ -88,7 +88,7 @@ class NowPlayingViewController : UIViewController
     override func viewDidLoad() {
         
         missingArtworkImage = UIImage(named: "MissingAlbumArtwork")   // Preload this and keep it around
-        defaultBackgroundImage = UIImage(named: "defaultplayerback")
+        defaultBackgroundImage = UIImage(named: "GTOWN_Emblem")
         loadingAnimatedImage = UIImage.gif(name: "loading")
         
         albumArtImageView.image = defaultBackgroundImage
