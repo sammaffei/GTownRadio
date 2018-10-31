@@ -32,7 +32,7 @@ class NowPlayingViewController : UIViewController
     
     fileprivate func setNotPlayingInfoUI()
         {
-        trackLabel.text = "Not Playing".localized()
+        trackLabel.text = "Press Play".localized()
         artistLabel.text = ""
         albumArtImageView.image = defaultBackgroundImage
         }
