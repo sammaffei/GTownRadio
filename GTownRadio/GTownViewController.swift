@@ -13,7 +13,7 @@ import FRadioPlayer
 
 import MediaPlayer
 
-class GTownViewController: UIViewController, FRadioPlayerDelegate {
+class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPresentationControllerDelegate {
     
     var nowPlayingVC : NowPlayingViewController?
     
@@ -59,15 +59,33 @@ class GTownViewController: UIViewController, FRadioPlayerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         switch segue.identifier
             {
-            case "NowPlayingEmbedID":
+            case Constants.AppSegues.NowPlayingEmbedID:
                 if let nPVC = segue.destination as? NowPlayingViewController
                     {
                     nowPlayingVC =  nPVC
                     }
+            
+            case Constants.AppSegues.SettingsPopoverSegueID:
+                
+                guard let settingsVC = segue.destination as? UIViewController,
+                    let popPresenter = settingsVC.popoverPresentationController
+                    else { return }
+
+                settingsVC.modalPresentationStyle = .popover
+
+                popPresenter.backgroundColor = settingsVC.view.backgroundColor
+                
+                popPresenter.delegate = self                
+                
+                break
             
             
             default:

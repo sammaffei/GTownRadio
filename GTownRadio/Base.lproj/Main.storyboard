@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,6 +65,11 @@
                     <navigationItem key="navigationItem" title="G-Town Radio" id="ThN-ES-puJ">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="gearicon" id="VQc-vl-QP4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="wmz-hE-a6q" kind="popoverPresentation" identifier="SettingsPopoverSegueID" popoverAnchorBarButtonItem="VQc-vl-QP4" id="aLa-qi-dCg">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -75,7 +81,7 @@
                     <items/>
                 </toolbar>
             </objects>
-            <point key="canvasLocation" x="1535.625" y="348.59154929577466"/>
+            <point key="canvasLocation" x="1500" y="-1773"/>
         </scene>
         <!--Now Playing View Controller-->
         <scene sceneID="j72-hN-i31">
@@ -133,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6U-uP-bGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="349"/>
+            <point key="canvasLocation" x="2271" y="-1171"/>
         </scene>
         <!--Light Nav Controller-->
         <scene sceneID="lkt-5H-qg7">
@@ -159,6 +165,65 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0R-SA-nGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="206" y="-1775"/>
+        </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="O05-VB-Sbl">
+            <objects>
+                <tableViewController id="wmz-hE-a6q" userLabel="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Iu1-NY-QCp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="Settings" id="12g-1E-p5t">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4dv-yv-63u">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4dv-yv-63u" id="fu8-lq-IK4">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qF7-iC-TcW">
+                                                    <rect key="frame" x="257" y="6" width="49" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="Q8U-IU-KGL"/>
+                                                        <constraint firstAttribute="height" constant="31" id="tMD-C6-EZ2"/>
+                                                    </constraints>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Lo-Fi on Cellular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n19-IB-UvS">
+                                                    <rect key="frame" x="16" y="11" width="233" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="9AK-S4-HQ1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n19-IB-UvS" firstAttribute="leading" secondItem="fu8-lq-IK4" secondAttribute="leadingMargin" id="3Ra-Wz-gxL"/>
+                                                <constraint firstItem="qF7-iC-TcW" firstAttribute="centerY" secondItem="fu8-lq-IK4" secondAttribute="centerY" id="RYd-uS-vEl"/>
+                                                <constraint firstItem="n19-IB-UvS" firstAttribute="centerY" secondItem="fu8-lq-IK4" secondAttribute="centerY" id="YzP-0O-YMZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="qF7-iC-TcW" secondAttribute="trailing" constant="16" id="qnx-Vg-NVT"/>
+                                                <constraint firstItem="qF7-iC-TcW" firstAttribute="leading" secondItem="n19-IB-UvS" secondAttribute="trailing" constant="8" id="wBL-dO-8s5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="wmz-hE-a6q" id="lan-5t-XRG"/>
+                            <outlet property="delegate" destination="wmz-hE-a6q" id="uaz-Dd-bmg"/>
+                        </connections>
+                    </tableView>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRh-xA-dDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.875" y="-924.29577464788736"/>
         </scene>
     </scenes>
     <resources>
