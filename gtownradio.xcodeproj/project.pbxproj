@@ -10,6 +10,7 @@
 		4B0B6A6B2148983F008F1020 /* LastFM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B6A6A2148983F008F1020 /* LastFM.swift */; };
 		4B17B05E218A4BB700B6F3A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17B05D218A4BB700B6F3A6 /* Constants.swift */; };
 		4B17B060218A51EA00B6F3A6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17B05F218A51EA00B6F3A6 /* SettingsViewController.swift */; };
+		4B17B062218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17B061218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift */; };
 		4B2E98CF21582C9900DB8B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E98CE21582C9900DB8B2C /* Assets.xcassets */; };
 		4B30194A2143059800DD05D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3019492143059800DD05D4 /* AppDelegate.swift */; };
 		4B30194C2143059800DD05D4 /* GTownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30194B2143059800DD05D4 /* GTownViewController.swift */; };
@@ -31,6 +32,7 @@
 		4B0B6A6A2148983F008F1020 /* LastFM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastFM.swift; path = GTownRadio/LastFM.swift; sourceTree = SOURCE_ROOT; };
 		4B17B05D218A4BB700B6F3A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = GTownRadio/Constants.swift; sourceTree = SOURCE_ROOT; };
 		4B17B05F218A51EA00B6F3A6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = GTownRadio/SettingsViewController.swift; sourceTree = SOURCE_ROOT; };
+		4B17B061218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaults_GTownExtension.swift; path = GTownRadio/UserDefaults_GTownExtension.swift; sourceTree = SOURCE_ROOT; };
 		4B2E98CE21582C9900DB8B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = GTownRadio/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		4B3019462143059800DD05D4 /* gtownradio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gtownradio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3019492143059800DD05D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				4B0B6A6A2148983F008F1020 /* LastFM.swift */,
 				4B3019492143059800DD05D4 /* AppDelegate.swift */,
 				4B30194B2143059800DD05D4 /* GTownViewController.swift */,
+				4B17B061218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift */,
 				4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */,
 				4B30194F2143059800DD05D4 /* Main.storyboard */,
 				4B8A019221865C2B00DFFAB9 /* LightNavController.swift */,
@@ -238,6 +241,7 @@
 				4BE9195D2147294F0034E739 /* NowPlayingTask.swift in Sources */,
 				4B8A019321865C2B00DFFAB9 /* LightNavController.swift in Sources */,
 				4B30194C2143059800DD05D4 /* GTownViewController.swift in Sources */,
+				4B17B062218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift in Sources */,
 				4B417D90215804CB008F2262 /* NowPlayingViewController.swift in Sources */,
 				4B0B6A6B2148983F008F1020 /* LastFM.swift in Sources */,
 				4B17B05E218A4BB700B6F3A6 /* Constants.swift in Sources */,

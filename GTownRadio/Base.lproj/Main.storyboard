@@ -170,7 +170,7 @@
         <!--SettingsViewController-->
         <scene sceneID="O05-VB-Sbl">
             <objects>
-                <tableViewController id="wmz-hE-a6q" userLabel="SettingsViewController" sceneMemberID="viewController">
+                <tableViewController id="wmz-hE-a6q" userLabel="SettingsViewController" customClass="SettingsViewController" customModule="gtownradio" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Iu1-NY-QCp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,6 +191,9 @@
                                                         <constraint firstAttribute="width" constant="47" id="Q8U-IU-KGL"/>
                                                         <constraint firstAttribute="height" constant="31" id="tMD-C6-EZ2"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <action selector="loFiCellSwitchChange:" destination="wmz-hE-a6q" eventType="valueChanged" id="T3M-8v-ZhZ"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Lo-Fi on Cellular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n19-IB-UvS">
                                                     <rect key="frame" x="16" y="11" width="233" height="21"/>
@@ -220,6 +223,9 @@
                         </connections>
                     </tableView>
                     <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
+                    <connections>
+                        <outlet property="loFiOnCellSwitch" destination="qF7-iC-TcW" id="Nvf-kT-YjY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sRh-xA-dDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

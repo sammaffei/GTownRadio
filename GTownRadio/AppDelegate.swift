@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FRadioPlayer.shared.isAutoPlay = false
-        FRadioPlayer.shared.radioURL = URL(string: "http://www.gtownradio.com/gtown_hi.m3u")
+        FRadioPlayer.shared.radioURL = UserDefaults.standard.radioPlayerURL()
         
         return true
     }
