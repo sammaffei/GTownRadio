@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-20-8CS" userLabel="Play Button" customClass="SVGPlayButton" customModule="gtownradio" customModuleProvider="target">
-                                <rect key="frame" x="135" y="318" width="50" height="50"/>
+                                <rect key="frame" x="135" y="382" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MSZ-zR-rqe"/>
                                     <constraint firstAttribute="width" constant="50" id="zIf-a7-nSL"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvf-Cg-fg0" userLabel="Now Playing Container">
-                                <rect key="frame" x="16" y="20" width="288" height="288"/>
+                                <rect key="frame" x="16" y="84" width="288" height="288"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rvf-Cg-fg0" secondAttribute="height" multiplier="10:10" id="ffL-GM-9Ea"/>
                                 </constraints>
@@ -42,10 +42,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93945127139412266" green="1" blue="0.91750150716196632" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="rvf-Cg-fg0" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="82W-dc-eK1"/>
                             <constraint firstItem="FAN-20-8CS" firstAttribute="top" secondItem="rvf-Cg-fg0" secondAttribute="bottom" constant="10" id="Htk-4F-k38"/>
                             <constraint firstItem="rvf-Cg-fg0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="IhM-jN-ZLT"/>
                             <constraint firstItem="FAN-20-8CS" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="UPc-c1-qej"/>
+                            <constraint firstItem="rvf-Cg-fg0" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-24" id="egw-xT-Gm6"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="rvf-Cg-fg0" secondAttribute="trailing" constant="16" id="iGf-W8-C91"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
@@ -99,7 +99,7 @@
                                     <constraint firstAttribute="width" secondItem="aPN-D7-dTw" secondAttribute="height" multiplier="1:1" id="Ej2-ab-CrE"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Press Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJs-jo-b0a">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJs-jo-b0a">
                                 <rect key="frame" x="0.0" y="238" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4xz-dC-w6J"/>
@@ -108,7 +108,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-2P-4uo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-2P-4uo">
                                 <rect key="frame" x="0.0" y="261" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="qyf-vL-rZO"/>

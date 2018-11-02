@@ -32,8 +32,8 @@ class NowPlayingViewController : UIViewController
     
     fileprivate func setNotPlayingInfoUI()
         {
-        trackLabel.text = "Press Play".localized()
-        artistLabel.text = ""
+        artistLabel.text = "Press Play".localized()
+        trackLabel.text = ""
         albumArtImageView.image = defaultBackgroundImage
         }
     
@@ -81,8 +81,8 @@ class NowPlayingViewController : UIViewController
     func showLoadingUI()
         {
         albumArtImageView.image = loadingAnimatedImage
-        trackLabel.text = "Loading".localized()
-        artistLabel.text = nil
+        artistLabel.text = "Loading".localized()
+        trackLabel.text = nil
         }
     
     override func viewDidLoad() {
