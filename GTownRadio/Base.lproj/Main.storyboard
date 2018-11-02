@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,17 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvf-Cg-fg0">
-                                <rect key="frame" x="16" y="21" width="288" height="319"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="319" id="3oD-4o-78v"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="tTn-iN-6x3" kind="embed" identifier="NowPlayingEmbedID" id="AWb-RW-jT7"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-20-8CS" customClass="SVGPlayButton" customModule="gtownradio" customModuleProvider="target">
-                                <rect key="frame" x="135" y="361" width="50" height="50"/>
+                                <rect key="frame" x="135" y="360" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MSZ-zR-rqe"/>
                                     <constraint firstAttribute="width" constant="50" id="zIf-a7-nSL"/>
@@ -38,14 +30,23 @@
                                     <action selector="togglePlayingWithSender:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jJW-eq-LVi"/>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvf-Cg-fg0" userLabel="Now Playing Container">
+                                <rect key="frame" x="16" y="20" width="288" height="319"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rvf-Cg-fg0" secondAttribute="height" multiplier="9:10" id="ffL-GM-9Ea"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="tTn-iN-6x3" kind="embed" identifier="NowPlayingEmbedID" id="AWb-RW-jT7"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.93945127139412266" green="1" blue="0.91750150716196632" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="rvf-Cg-fg0" secondAttribute="trailing" constant="16" id="1vS-7M-HJe"/>
-                            <constraint firstItem="rvf-Cg-fg0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="5Zs-JF-qnb"/>
+                            <constraint firstItem="rvf-Cg-fg0" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="82W-dc-eK1"/>
                             <constraint firstItem="FAN-20-8CS" firstAttribute="top" secondItem="rvf-Cg-fg0" secondAttribute="bottom" constant="21" id="Htk-4F-k38"/>
-                            <constraint firstItem="rvf-Cg-fg0" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="21" id="Pk9-5y-Aam"/>
+                            <constraint firstItem="rvf-Cg-fg0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="IhM-jN-ZLT"/>
                             <constraint firstItem="FAN-20-8CS" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="UPc-c1-qej"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="rvf-Cg-fg0" secondAttribute="trailing" constant="16" id="iGf-W8-C91"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -81,7 +82,7 @@
                     <items/>
                 </toolbar>
             </objects>
-            <point key="canvasLocation" x="1500" y="-1773"/>
+            <point key="canvasLocation" x="1500" y="-1773.5915492957747"/>
         </scene>
         <!--Now Playing View Controller-->
         <scene sceneID="j72-hN-i31">
@@ -91,25 +92,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="288" height="319"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aPN-D7-dTw">
-                                <rect key="frame" x="54" y="32" width="180" height="180"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="1zo-GD-1rH"/>
-                                    <constraint firstAttribute="width" constant="180" id="wkK-Xz-V95"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJs-jo-b0a">
-                                <rect key="frame" x="16" y="251" width="256" height="21"/>
+                                <rect key="frame" x="16" y="243" width="256" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="oSv-Ll-WE2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="iG0-8Q-7fV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-2P-4uo">
-                                <rect key="frame" x="16" y="278" width="256" height="21"/>
+                                <rect key="frame" x="16" y="266" width="256" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5ek-l4-CjR"/>
                                 </constraints>
@@ -117,17 +110,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aPN-D7-dTw">
+                                <rect key="frame" x="44" y="32" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aPN-D7-dTw" secondAttribute="height" multiplier="1:1" id="Y4i-Tt-sNv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.98325842620000004" green="0.86164111379999997" blue="0.9428730998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="W4c-fM-Foa" firstAttribute="trailing" secondItem="NJs-jo-b0a" secondAttribute="trailing" constant="16" id="100-19-bLa"/>
-                            <constraint firstItem="aPN-D7-dTw" firstAttribute="centerX" secondItem="CY1-Dp-oyE" secondAttribute="centerX" id="25o-63-iRm"/>
-                            <constraint firstItem="NJs-jo-b0a" firstAttribute="leading" secondItem="W4c-fM-Foa" secondAttribute="leading" constant="16" id="9fC-dA-mHz"/>
-                            <constraint firstItem="W4c-fM-Foa" firstAttribute="trailing" secondItem="Csx-2P-4uo" secondAttribute="trailing" constant="16" id="AiO-hv-68A"/>
-                            <constraint firstItem="aPN-D7-dTw" firstAttribute="top" secondItem="W4c-fM-Foa" secondAttribute="top" constant="32" id="WWI-p1-307"/>
-                            <constraint firstItem="Csx-2P-4uo" firstAttribute="top" secondItem="NJs-jo-b0a" secondAttribute="bottom" constant="6" id="s6g-GB-8WE"/>
-                            <constraint firstItem="Csx-2P-4uo" firstAttribute="leading" secondItem="W4c-fM-Foa" secondAttribute="leading" constant="16" id="seR-31-AlV"/>
-                            <constraint firstItem="W4c-fM-Foa" firstAttribute="bottom" secondItem="Csx-2P-4uo" secondAttribute="bottom" constant="20" id="y9W-j6-T4I"/>
+                            <constraint firstItem="W4c-fM-Foa" firstAttribute="trailing" secondItem="Csx-2P-4uo" secondAttribute="trailing" constant="16" id="Dz3-9V-DNZ"/>
+                            <constraint firstItem="aPN-D7-dTw" firstAttribute="leading" secondItem="W4c-fM-Foa" secondAttribute="leading" constant="44" id="Jbg-HF-L9S"/>
+                            <constraint firstItem="W4c-fM-Foa" firstAttribute="trailing" secondItem="aPN-D7-dTw" secondAttribute="trailing" constant="44" id="Wun-LG-uVU"/>
+                            <constraint firstItem="NJs-jo-b0a" firstAttribute="leading" secondItem="W4c-fM-Foa" secondAttribute="leading" constant="16" id="geR-Lb-vaq"/>
+                            <constraint firstItem="Csx-2P-4uo" firstAttribute="top" secondItem="NJs-jo-b0a" secondAttribute="bottom" constant="2" id="oIL-gb-8jc"/>
+                            <constraint firstItem="W4c-fM-Foa" firstAttribute="trailing" secondItem="NJs-jo-b0a" secondAttribute="trailing" constant="16" id="ryp-dG-nPI"/>
+                            <constraint firstItem="Csx-2P-4uo" firstAttribute="leading" secondItem="W4c-fM-Foa" secondAttribute="leading" constant="16" id="s5Q-mS-88r"/>
+                            <constraint firstItem="NJs-jo-b0a" firstAttribute="top" secondItem="aPN-D7-dTw" secondAttribute="bottom" constant="11" id="tro-Zw-hsh"/>
+                            <constraint firstItem="aPN-D7-dTw" firstAttribute="top" secondItem="W4c-fM-Foa" secondAttribute="top" constant="32" id="xNJ-aP-APS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W4c-fM-Foa"/>
                     </view>
@@ -139,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6U-uP-bGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="-1171"/>
+            <point key="canvasLocation" x="2270.625" y="-1172.0070422535211"/>
         </scene>
         <!--Light Nav Controller-->
         <scene sceneID="lkt-5H-qg7">
