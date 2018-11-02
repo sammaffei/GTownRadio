@@ -233,6 +233,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gearicon" width="44" height="44"/>
+        <image name="gearicon" width="24" height="24"/>
     </resources>
 </document>

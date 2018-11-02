@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "gearicon_88x88.png",
+      "filename" : "gearicon_48x48.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "gearicon_132x132.png",
+      "filename" : "gearicon_72x72.png",
       "scale" : "3x"
     }
   ],
