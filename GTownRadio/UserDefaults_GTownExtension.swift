@@ -33,6 +33,9 @@ extension UserDefaults
     
     func radioPlayerURL()->URL
         {
+        // use reachbility here to see if we are on cellular. If preference is set and on cell,
+        // then return lo-fi url. Caller doesn't need to know the logic, just what URL was selected.            
+            
         return self.useLoFiOnCell() ? Constants.RadioPlayerURLs.LoFi : Constants.RadioPlayerURLs.HiFi
         }
     }

@@ -24,7 +24,17 @@ class SettingsViewController : UITableViewController
         {
         UserDefaults.standard.setUseLoFiOnCell(value: sender.isOn)
             { (useLoFi : Bool) in
+                
+            let wasPlaying = FRadioPlayer.shared.isPlaying
+                
             FRadioPlayer.shared.radioURL = UserDefaults.standard.radioPlayerURL()
+                
+            if wasPlaying
+                {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        FRadioPlayer.shared.play()
+                    }
+                }
             }
         }
 }
