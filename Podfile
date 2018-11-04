@@ -9,6 +9,8 @@ target 'gtownradio' do
 	pod 'Alamofire'
 	pod 'AlamoFuzi'
 	pod 'SwiftGifOrigin'
+	pod 'ReachabilitySwift'
+
 end
 
 

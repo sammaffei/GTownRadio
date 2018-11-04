@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Reachability
 
 typealias LoFiChangeCallback = (Bool) ->Void
 
@@ -31,11 +32,20 @@ extension UserDefaults
         return bool(forKey: UserDefaultsKeys.LoFiOnCell.rawValue)
         }
     
+    private func areOnCellular()->Bool
+        {
+        guard let curReach = Reachability()
+            else {return false}
+            
+        return curReach.connection == .cellular
+        }
+    
     func radioPlayerURL()->URL
         {
         // use reachbility here to see if we are on cellular. If preference is set and on cell,
-        // then return lo-fi url. Caller doesn't need to know the logic, just what URL was selected.            
+        // then return lo-fi url. Caller doesn't need to know the logic, just what URL was selected.
             
-        return self.useLoFiOnCell() ? Constants.RadioPlayerURLs.LoFi : Constants.RadioPlayerURLs.HiFi
+        return self.useLoFiOnCell() && areOnCellular() ? Constants.RadioPlayerURLs.LoFi :
+                                                        Constants.RadioPlayerURLs.HiFi
         }
     }

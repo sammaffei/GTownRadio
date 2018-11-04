@@ -22,14 +22,17 @@ class SettingsViewController : UITableViewController
     
     @IBAction func loFiCellSwitchChange(_ sender: UISwitch)
         {
+        let lastRadioURL = FRadioPlayer.shared.radioURL
+        let wasPlaying = FRadioPlayer.shared.isPlaying
+            
         UserDefaults.standard.setUseLoFiOnCell(value: sender.isOn)
             { (useLoFi : Bool) in
                 
-            let wasPlaying = FRadioPlayer.shared.isPlaying
+            let prefURL = UserDefaults.standard.radioPlayerURL()
                 
-            FRadioPlayer.shared.radioURL = UserDefaults.standard.radioPlayerURL()
-                
-            if wasPlaying
+            FRadioPlayer.shared.radioURL = prefURL
+
+            if wasPlaying && (prefURL != lastRadioURL)
                 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         FRadioPlayer.shared.play()
