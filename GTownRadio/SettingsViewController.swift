@@ -12,11 +12,30 @@ import FRadioPlayer
 class SettingsViewController : UITableViewController
     {
     @IBOutlet var loFiOnCellSwitch : UISwitch!
+    @IBOutlet var infoTextView : UITextView!
+    
+    private func setVersionAppInfoLabel()
+    {
+        guard let infoText = infoTextView.text
+            else {return}
+        
+        var replaceStr = "????"
+        
+        if let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString"),
+            let buildNum = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")
+            {
+            replaceStr = "\(version) (\(buildNum))"
+            }
+        
+        infoTextView.text = (infoText as NSString).replacingOccurrences(of: "#vers#", with: replaceStr)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loFiOnCellSwitch.isOn = UserDefaults.standard.useLoFiOnCell()
+        
+        setVersionAppInfoLabel()
     }
     
     
