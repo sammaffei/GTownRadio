@@ -34,6 +34,9 @@ class SettingsViewController : UITableViewController
 
             if wasPlaying && (prefURL != lastRadioURL)
                 {
+                // Need a delay for AV to reset before starting play again. If it doesn't work it's only
+                // a minor fail becuase it only happens when fidelity changes while playing.
+                    
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                         FRadioPlayer.shared.play()
                     }
