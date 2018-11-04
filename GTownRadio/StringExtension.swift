@@ -10,6 +10,8 @@ import Foundation
 
 extension String {
     
+    // very simple support for localized strings
+    
     func localized(comment:String = "") -> String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: comment)
     }

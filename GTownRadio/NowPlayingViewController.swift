@@ -5,6 +5,8 @@
 //  Created by Samuel Maffei on 9/23/18.
 //  Copyright © 2018 Samuel Maffei. All rights reserved.
 //
+//  Encapsulation of Now Plating display interface
+//
 
 import UIKit
 import SwiftGifOrigin
@@ -25,9 +27,13 @@ class NowPlayingViewController : UIViewController
             }
         }
     
+    // These images are small, so pre-load them
+    
     fileprivate var missingArtworkImage : UIImage?
     fileprivate var loadingAnimatedImage : UIImage?
     fileprivate var defaultBackgroundImage : UIImage?
+    fileprivate var showOtherContentImage : UIImage?
+
 
     
     fileprivate func setNotPlayingInfoUI()
@@ -47,11 +53,11 @@ class NowPlayingViewController : UIViewController
             case .promo:
                 trackLabel.text = playInfo.song
                 artistLabel.text = playInfo.artist
-                albumArtImageView.image = defaultBackgroundImage
+                albumArtImageView.image = showOtherContentImage
             case .show:
                 trackLabel.text = playInfo.song
                 artistLabel.text = playInfo.artist
-                albumArtImageView.image = defaultBackgroundImage
+                albumArtImageView.image = showOtherContentImage
             case .song:
                 LastFM().loadAlbumArt(nowInfo: playInfo, loadCompl:
                     { (fetchedImage : UIImage?) in
@@ -90,6 +96,8 @@ class NowPlayingViewController : UIViewController
         missingArtworkImage = UIImage(named: "MissingAlbumArtwork")   // Preload this and keep it around
         defaultBackgroundImage = UIImage(named: "GTOWN_Emblem")
         loadingAnimatedImage = UIImage.gif(name: "loading")
+        showOtherContentImage = UIImage(named: "RadioTower")
+
         
         albumArtImageView.image = defaultBackgroundImage
         

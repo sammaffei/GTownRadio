@@ -104,13 +104,13 @@
 				4B30194B2143059800DD05D4 /* GTownViewController.swift */,
 				4B17B061218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift */,
 				4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */,
+				4B417D8D2157D7F5008F2262 /* StringExtension.swift */,
+				4B17B05F218A51EA00B6F3A6 /* SettingsViewController.swift */,
 				4B30194F2143059800DD05D4 /* Main.storyboard */,
 				4B8A019221865C2B00DFFAB9 /* LightNavController.swift */,
 				4B3019542143059A00DD05D4 /* LaunchScreen.storyboard */,
 				4B4C9DD42177A62900EB99A4 /* loading.gif */,
 				4B3019572143059A00DD05D4 /* Info.plist */,
-				4B417D8D2157D7F5008F2262 /* StringExtension.swift */,
-				4B17B05F218A51EA00B6F3A6 /* SettingsViewController.swift */,
 			);
 			path = gtownradio;
 			sourceTree = "<group>";

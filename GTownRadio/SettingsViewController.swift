@@ -5,6 +5,8 @@
 //  Created by Samuel Maffei on 10/31/18.
 //  Copyright © 2018 Samuel Maffei. All rights reserved.
 //
+//  View Controller for Settings popover
+//
 
 import UIKit
 import FRadioPlayer
@@ -14,7 +16,7 @@ class SettingsViewController : UITableViewController
     @IBOutlet var loFiOnCellSwitch : UISwitch!
     @IBOutlet var infoTextView : UITextView!
     
-    private func setVersionAppInfoLabel()
+    private func setVersionAppInfoText()
     {
         guard let infoText = infoTextView.text
             else {return}
@@ -35,7 +37,7 @@ class SettingsViewController : UITableViewController
         
         loFiOnCellSwitch.isOn = UserDefaults.standard.useLoFiOnCell()
         
-        setVersionAppInfoLabel()
+        setVersionAppInfoText()
     }
     
     

@@ -67,6 +67,8 @@ class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPres
     {
         switch segue.identifier
             {
+            // Use embed to grab view controller
+            
             case Constants.AppSegues.NowPlayingEmbedID:
                 if let nPVC = segue.destination as? NowPlayingViewController
                     {
@@ -74,6 +76,8 @@ class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPres
                     }
             
             case Constants.AppSegues.SettingsPopoverSegueID:
+                
+            // Support popover for settings / about
                 
                 guard let settingsVC = segue.destination as? UIViewController,
                     let popPresenter = settingsVC.popoverPresentationController

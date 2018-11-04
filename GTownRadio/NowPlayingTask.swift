@@ -5,9 +5,14 @@
 //  Created by Samuel Maffei on 9/10/18.
 //  Copyright © 2018 Samuel Maffei. All rights reserved.
 //
+//  Class that parse G-Town's now playing HTML to figure out content type, artist, and track
+//
 
 import Alamofire
 import AlamoFuzi
+
+// Struct that is filled in with info about what's playing
+// Uses duration to determine content type.
 
 struct NowPlayingInfo
     {
@@ -37,6 +42,8 @@ struct NowPlayingInfo
     
     }
 
+// Task to parse out now playing info. Uses HTTP HEAD request to figure out if web page changed.
+// If changed, then do full page grab to get the info.
 
 class NowPlayingTask
     {
@@ -131,10 +138,12 @@ class NowPlayingTask
 
     
     func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 5.0,
+        // do head request every 3 seconds, to see if now playing info has changed
+        
+        timer = Timer.scheduledTimer(timeInterval: 3.0,
                                      target: self,
                                      selector: #selector(eventWith(timer:)),
-                                     userInfo: [ "foo" : "bar" ],
+                                     userInfo: nil,
                                      repeats: true)
     }
     

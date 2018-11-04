@@ -5,6 +5,8 @@
 //  Created by Samuel Maffei on 9/11/18.
 //  Copyright © 2018 Samuel Maffei. All rights reserved.
 //
+//  Class to use Last FM to get album artwork
+//
 
 import Foundation
 import Alamofire
@@ -81,7 +83,7 @@ class LastFM
                                         }
                                 }
                         
-                        case .failure(let _):
+                        case .failure( _):
                             loadCompl(nil)
                         }
                     }
