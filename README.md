@@ -2,7 +2,7 @@
 # G-Town Radio Project
 iOS App for G-Town Radio
 
-### Building the Applications
+### Building the Application
 
 - This project uses CocoaPods.
 - This project requires Xcode 9.
