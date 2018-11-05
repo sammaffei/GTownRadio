@@ -18,6 +18,7 @@ extension UserDefaults
     enum UserDefaultsKeys : String
         {
         case LoFiOnCell = "LoFiOnCell"
+        case PlayCountThreshold = "PlayCountThreshold"
         }
     
     func setUseLoFiOnCell(value:Bool, changeCallback : LoFiChangeCallback?)
@@ -49,5 +50,22 @@ extension UserDefaults
             
         return self.useLoFiOnCell() && areOnCellular() ? Constants.RadioPlayerURLs.LoFi :
                                                         Constants.RadioPlayerURLs.HiFi
+        }
+    
+    func reachedPlayCountRatingThreshold()->Bool
+        {
+        return integer(forKey: UserDefaultsKeys.PlayCountThreshold.rawValue) > Constants.PlayCount.RatingThreshold
+        }
+    
+    func pushBackPlayCount()
+        // Kick back play count so as not to keep pestering user
+        {
+        set(-Constants.PlayCount.PushbackValue, forKey: UserDefaultsKeys.PlayCountThreshold.rawValue)
+        }
+    
+    func incrementPlayCount()
+        {
+        set(integer(forKey: UserDefaultsKeys.PlayCountThreshold.rawValue) + 1,
+                forKey: UserDefaultsKeys.PlayCountThreshold.rawValue)
         }
     }

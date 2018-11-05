@@ -21,4 +21,10 @@ class Constants
         static let HiFi = URL(string: "http://www.gtownradio.com/gtown_hi.m3u")!
         static let LoFi = URL(string: "http://www.gtownradio.com/gtown_lo.m3u")!
         }
+    
+    struct PlayCount
+        {
+        static let RatingThreshold : Int = 20
+        static let PushbackValue : Int = 200
+        }
     }

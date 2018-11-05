@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import MediaPlayer
+import StoreKit
+
 import Alamofire
 import AlamoFuzi
 import FRadioPlayer
-
-import MediaPlayer
 
 class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPresentationControllerDelegate {
     
@@ -31,12 +32,20 @@ class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPres
         if FRadioPlayer.shared.isPlaying
             {
             FRadioPlayer.shared.pause()
+                
             sender.playing = false
             }
         else
             {
             nowPlayingVC?.showLoadingUI()
+                
             FRadioPlayer.shared.play()
+                
+            if #available(iOS 10.3, *)
+                {
+                UserDefaults.standard.incrementPlayCount()
+                }
+            
             sender.playing = true
             }
             
@@ -51,9 +60,30 @@ class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPres
         let _ = NowPlayingTask.shared
         
         FRadioPlayer.shared.delegate = self
-
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if #available(iOS 10.3, *)
+            {
+            if UserDefaults.standard.reachedPlayCountRatingThreshold()
+                {
+                // Delay just a bit to not be jarring
+                    
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0)
+                    {
+                    SKStoreReviewController.requestReview()
+                    }
+
+                // request review, then reset request for much longer period
+                    
+                UserDefaults.standard.pushBackPlayCount()
+                }
+            }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -77,10 +107,11 @@ class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPres
             
             case Constants.AppSegues.SettingsPopoverSegueID:
                 
-            // Support popover for settings / about
+                // Support popover for settings / about
                 
-                guard let settingsVC = segue.destination as? UIViewController,
-                    let popPresenter = settingsVC.popoverPresentationController
+                let settingsVC = segue.destination
+                
+                guard let popPresenter = settingsVC.popoverPresentationController
                     else { return }
 
                 settingsVC.modalPresentationStyle = .popover
