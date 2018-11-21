@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GTownTVViewController.swift
 //  gtowntv
 //
 //  Created by Samuel Maffei on 11/21/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GTownTVViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,7 @@
 		31FAF44CD077063C40D18960 /* libPods-gtowntv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C518F3102B071642C98990 /* libPods-gtowntv.a */; };
 		4B0B6A6B2148983F008F1020 /* LastFM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B6A6A2148983F008F1020 /* LastFM.swift */; };
 		4B173B9421A5685B00010F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9321A5685B00010F90 /* AppDelegate.swift */; };
-		4B173B9621A5685B00010F90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9521A5685B00010F90 /* ViewController.swift */; };
+		4B173B9621A5685B00010F90 /* GTownTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9521A5685B00010F90 /* GTownTVViewController.swift */; };
 		4B173B9921A5685B00010F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B173B9721A5685B00010F90 /* Main.storyboard */; };
 		4B173B9B21A5685C00010F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B173B9A21A5685C00010F90 /* Assets.xcassets */; };
 		4B17B05E218A4BB700B6F3A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17B05D218A4BB700B6F3A6 /* Constants.swift */; };
@@ -23,6 +23,7 @@
 		4B3019562143059A00DD05D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3019542143059A00DD05D4 /* LaunchScreen.storyboard */; };
 		4B417D8E2157D7F5008F2262 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8D2157D7F5008F2262 /* StringExtension.swift */; };
 		4B417D90215804CB008F2262 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */; };
+		4B4850E721A6161400E2933B /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4B4850E521A6161400E2933B /* loading.gif */; };
 		4B4C9DD62177A62900EB99A4 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C9DD42177A62900EB99A4 /* loading.gif */; };
 		4B6D7C2F21A56C90005827BD /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */; };
 		4B6D7C3021A56CA7005827BD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8D2157D7F5008F2262 /* StringExtension.swift */; };
@@ -40,7 +41,7 @@
 		4B0B6A6A2148983F008F1020 /* LastFM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastFM.swift; path = Shared/LastFM.swift; sourceTree = SOURCE_ROOT; };
 		4B173B9121A5685B00010F90 /* gtowntv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gtowntv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B173B9321A5685B00010F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B173B9521A5685B00010F90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B173B9521A5685B00010F90 /* GTownTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTownTVViewController.swift; sourceTree = "<group>"; };
 		4B173B9821A5685B00010F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B173B9A21A5685C00010F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B173B9C21A5685C00010F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		4B3019572143059A00DD05D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B417D8D2157D7F5008F2262 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Shared/StringExtension.swift; sourceTree = SOURCE_ROOT; };
 		4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingViewController.swift; path = Shared/NowPlayingViewController.swift; sourceTree = SOURCE_ROOT; };
+		4B4850E621A6161400E2933B /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Base; path = Base.lproj/loading.gif; sourceTree = "<group>"; };
 		4B4C9DD52177A62900EB99A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Base; path = GTownRadio/Base.lproj/loading.gif; sourceTree = SOURCE_ROOT; };
 		4B809165215B09A000C09471 /* SVGPlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPlayButton.swift; sourceTree = "<group>"; };
 		4B809166215B09A000C09471 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -95,8 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				4B173B9321A5685B00010F90 /* AppDelegate.swift */,
-				4B173B9521A5685B00010F90 /* ViewController.swift */,
+				4B173B9521A5685B00010F90 /* GTownTVViewController.swift */,
 				4B173B9721A5685B00010F90 /* Main.storyboard */,
+				4B4850E521A6161400E2933B /* loading.gif */,
 				4B173B9A21A5685C00010F90 /* Assets.xcassets */,
 				4B173B9C21A5685C00010F90 /* Info.plist */,
 			);
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4850E721A6161400E2933B /* loading.gif in Resources */,
 				4B173B9B21A5685C00010F90 /* Assets.xcassets in Resources */,
 				4B173B9921A5685B00010F90 /* Main.storyboard in Resources */,
 			);
@@ -336,7 +340,7 @@
 			files = (
 				4B6D7C3221A56CC8005827BD /* NowPlayingTask.swift in Sources */,
 				4B6D7C3021A56CA7005827BD /* StringExtension.swift in Sources */,
-				4B173B9621A5685B00010F90 /* ViewController.swift in Sources */,
+				4B173B9621A5685B00010F90 /* GTownTVViewController.swift in Sources */,
 				4B6D7C2F21A56C90005827BD /* NowPlayingViewController.swift in Sources */,
 				4B173B9421A5685B00010F90 /* AppDelegate.swift in Sources */,
 				4B6D7C3121A56CB2005827BD /* LastFM.swift in Sources */,
@@ -386,6 +390,14 @@
 				4B3019552143059A00DD05D4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4B4850E521A6161400E2933B /* loading.gif */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B4850E621A6161400E2933B /* Base */,
+			);
+			name = loading.gif;
 			sourceTree = "<group>";
 		};
 		4B4C9DD42177A62900EB99A4 /* loading.gif */ = {
