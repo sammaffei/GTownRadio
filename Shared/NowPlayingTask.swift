@@ -1,5 +1,5 @@
 //
-//  NowPlayingInfo.swift
+//  NowPlayingTask.swift
 //  gtownradio
 //
 //  Created by Samuel Maffei on 9/10/18.

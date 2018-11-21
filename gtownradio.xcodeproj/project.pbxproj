@@ -24,6 +24,10 @@
 		4B417D8E2157D7F5008F2262 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8D2157D7F5008F2262 /* StringExtension.swift */; };
 		4B417D90215804CB008F2262 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */; };
 		4B4C9DD62177A62900EB99A4 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C9DD42177A62900EB99A4 /* loading.gif */; };
+		4B6D7C2F21A56C90005827BD /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */; };
+		4B6D7C3021A56CA7005827BD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B417D8D2157D7F5008F2262 /* StringExtension.swift */; };
+		4B6D7C3121A56CB2005827BD /* LastFM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B6A6A2148983F008F1020 /* LastFM.swift */; };
+		4B6D7C3221A56CC8005827BD /* NowPlayingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9195C2147294F0034E739 /* NowPlayingTask.swift */; };
 		4B809169215B09A000C09471 /* SVGPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B809165215B09A000C09471 /* SVGPlayButton.swift */; };
 		4B80916A215B09A000C09471 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4B809166215B09A000C09471 /* README.md */; };
 		4B8A019321865C2B00DFFAB9 /* LightNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A019221865C2B00DFFAB9 /* LightNavController.swift */; };
@@ -33,7 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B0B6A6A2148983F008F1020 /* LastFM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastFM.swift; path = GTownRadio/LastFM.swift; sourceTree = SOURCE_ROOT; };
+		4B0B6A6A2148983F008F1020 /* LastFM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastFM.swift; path = Shared/LastFM.swift; sourceTree = SOURCE_ROOT; };
 		4B173B9121A5685B00010F90 /* gtowntv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gtowntv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B173B9321A5685B00010F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B173B9521A5685B00010F90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,14 +54,14 @@
 		4B3019502143059800DD05D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B3019552143059A00DD05D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3019572143059A00DD05D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B417D8D2157D7F5008F2262 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = GTownRadio/StringExtension.swift; sourceTree = SOURCE_ROOT; };
-		4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingViewController.swift; path = GTownRadio/NowPlayingViewController.swift; sourceTree = SOURCE_ROOT; };
+		4B417D8D2157D7F5008F2262 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Shared/StringExtension.swift; sourceTree = SOURCE_ROOT; };
+		4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingViewController.swift; path = Shared/NowPlayingViewController.swift; sourceTree = SOURCE_ROOT; };
 		4B4C9DD52177A62900EB99A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Base; path = GTownRadio/Base.lproj/loading.gif; sourceTree = SOURCE_ROOT; };
 		4B809165215B09A000C09471 /* SVGPlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPlayButton.swift; sourceTree = "<group>"; };
 		4B809166215B09A000C09471 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4B8A019221865C2B00DFFAB9 /* LightNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LightNavController.swift; path = GTownRadio/LightNavController.swift; sourceTree = SOURCE_ROOT; };
 		4B8A01942186631300DFFAB9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		4BE9195C2147294F0034E739 /* NowPlayingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingTask.swift; path = GTownRadio/NowPlayingTask.swift; sourceTree = SOURCE_ROOT; };
+		4BE9195C2147294F0034E739 /* NowPlayingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingTask.swift; path = Shared/NowPlayingTask.swift; sourceTree = SOURCE_ROOT; };
 		64C518F3102B071642C98990 /* libPods-gtowntv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtowntv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526D5A39D7B23997515A4CA /* Pods-gtownradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.release.xcconfig"; sourceTree = "<group>"; };
 		BC30118A05E26BBA560F7A21 /* Pods-gtowntv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtowntv.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtowntv/Pods-gtowntv.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		4B30193D2143059800DD05D4 = {
 			isa = PBXGroup;
 			children = (
+				4B6D7C2E21A56C78005827BD /* Shared */,
 				4B3019482143059800DD05D4 /* gtownradio */,
 				4B173B9221A5685B00010F90 /* gtowntv */,
 				4B3019472143059800DD05D4 /* Products */,
@@ -125,13 +130,9 @@
 				4B17B05D218A4BB700B6F3A6 /* Constants.swift */,
 				4B809164215B09A000C09471 /* SVGPlayButton */,
 				4B2E98CE21582C9900DB8B2C /* Assets.xcassets */,
-				4BE9195C2147294F0034E739 /* NowPlayingTask.swift */,
-				4B0B6A6A2148983F008F1020 /* LastFM.swift */,
 				4B3019492143059800DD05D4 /* AppDelegate.swift */,
 				4B30194B2143059800DD05D4 /* GTownViewController.swift */,
 				4B17B061218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift */,
-				4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */,
-				4B417D8D2157D7F5008F2262 /* StringExtension.swift */,
 				4B17B05F218A51EA00B6F3A6 /* SettingsViewController.swift */,
 				4B30194F2143059800DD05D4 /* Main.storyboard */,
 				4B8A019221865C2B00DFFAB9 /* LightNavController.swift */,
@@ -140,6 +141,17 @@
 				4B3019572143059A00DD05D4 /* Info.plist */,
 			);
 			path = gtownradio;
+			sourceTree = "<group>";
+		};
+		4B6D7C2E21A56C78005827BD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */,
+				4B417D8D2157D7F5008F2262 /* StringExtension.swift */,
+				4B0B6A6A2148983F008F1020 /* LastFM.swift */,
+				4BE9195C2147294F0034E739 /* NowPlayingTask.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		4B809164215B09A000C09471 /* SVGPlayButton */ = {
@@ -284,15 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-gtowntv-checkManifestLockResult.txt",
 			);
@@ -306,15 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-gtownradio-checkManifestLockResult.txt",
 			);
@@ -330,8 +334,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6D7C3221A56CC8005827BD /* NowPlayingTask.swift in Sources */,
+				4B6D7C3021A56CA7005827BD /* StringExtension.swift in Sources */,
 				4B173B9621A5685B00010F90 /* ViewController.swift in Sources */,
+				4B6D7C2F21A56C90005827BD /* NowPlayingViewController.swift in Sources */,
 				4B173B9421A5685B00010F90 /* AppDelegate.swift in Sources */,
+				4B6D7C3121A56CB2005827BD /* LastFM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
