@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DDF6B99E252073858B5173F /* libPods-gtownradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B71AA1A7D30488B1E015D84F /* libPods-gtownradio.a */; };
+		31FAF44CD077063C40D18960 /* libPods-gtowntv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C518F3102B071642C98990 /* libPods-gtowntv.a */; };
 		4B0B6A6B2148983F008F1020 /* LastFM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B6A6A2148983F008F1020 /* LastFM.swift */; };
+		4B173B9421A5685B00010F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9321A5685B00010F90 /* AppDelegate.swift */; };
+		4B173B9621A5685B00010F90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9521A5685B00010F90 /* ViewController.swift */; };
+		4B173B9921A5685B00010F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B173B9721A5685B00010F90 /* Main.storyboard */; };
+		4B173B9B21A5685C00010F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B173B9A21A5685C00010F90 /* Assets.xcassets */; };
 		4B17B05E218A4BB700B6F3A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17B05D218A4BB700B6F3A6 /* Constants.swift */; };
 		4B17B060218A51EA00B6F3A6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17B05F218A51EA00B6F3A6 /* SettingsViewController.swift */; };
 		4B17B062218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17B061218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift */; };
@@ -25,12 +29,17 @@
 		4B8A019321865C2B00DFFAB9 /* LightNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A019221865C2B00DFFAB9 /* LightNavController.swift */; };
 		4B8A01952186631300DFFAB9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8A01942186631300DFFAB9 /* MediaPlayer.framework */; };
 		4BE9195D2147294F0034E739 /* NowPlayingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9195C2147294F0034E739 /* NowPlayingTask.swift */; };
+		C5D25FC009221D1F1EA77B01 /* libPods-gtownradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2D2A7A1FCD12E626B1F4B /* libPods-gtownradio.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17351247348B65E6668EDD06 /* Pods-gtownradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.release.xcconfig"; sourceTree = "<group>"; };
-		405B97BB53C2A0B3416A36A1 /* Pods-gtownradio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.debug.xcconfig"; sourceTree = "<group>"; };
 		4B0B6A6A2148983F008F1020 /* LastFM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastFM.swift; path = GTownRadio/LastFM.swift; sourceTree = SOURCE_ROOT; };
+		4B173B9121A5685B00010F90 /* gtowntv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gtowntv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B173B9321A5685B00010F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B173B9521A5685B00010F90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B173B9821A5685B00010F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B173B9A21A5685C00010F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B173B9C21A5685C00010F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B17B05D218A4BB700B6F3A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = GTownRadio/Constants.swift; sourceTree = SOURCE_ROOT; };
 		4B17B05F218A51EA00B6F3A6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = GTownRadio/SettingsViewController.swift; sourceTree = SOURCE_ROOT; };
 		4B17B061218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaults_GTownExtension.swift; path = GTownRadio/UserDefaults_GTownExtension.swift; sourceTree = SOURCE_ROOT; };
@@ -49,38 +58,55 @@
 		4B8A019221865C2B00DFFAB9 /* LightNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LightNavController.swift; path = GTownRadio/LightNavController.swift; sourceTree = SOURCE_ROOT; };
 		4B8A01942186631300DFFAB9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4BE9195C2147294F0034E739 /* NowPlayingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingTask.swift; path = GTownRadio/NowPlayingTask.swift; sourceTree = SOURCE_ROOT; };
-		B71AA1A7D30488B1E015D84F /* libPods-gtownradio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtownradio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C518F3102B071642C98990 /* libPods-gtowntv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtowntv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7526D5A39D7B23997515A4CA /* Pods-gtownradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.release.xcconfig"; sourceTree = "<group>"; };
+		BC30118A05E26BBA560F7A21 /* Pods-gtowntv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtowntv.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtowntv/Pods-gtowntv.release.xcconfig"; sourceTree = "<group>"; };
+		BD657D3A45ECF000A77F9A27 /* Pods-gtownradio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.debug.xcconfig"; sourceTree = "<group>"; };
+		E1B2D2A7A1FCD12E626B1F4B /* libPods-gtownradio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtownradio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE42EB39EFDDF5D40E348D6E /* Pods-gtowntv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtowntv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtowntv/Pods-gtowntv.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B173B8E21A5685B00010F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FAF44CD077063C40D18960 /* libPods-gtowntv.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B3019432143059800DD05D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4B8A01952186631300DFFAB9 /* MediaPlayer.framework in Frameworks */,
-				0DDF6B99E252073858B5173F /* libPods-gtownradio.a in Frameworks */,
+				C5D25FC009221D1F1EA77B01 /* libPods-gtownradio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		104E43ABA6E9C80398198A55 /* Pods */ = {
+		4B173B9221A5685B00010F90 /* gtowntv */ = {
 			isa = PBXGroup;
 			children = (
-				405B97BB53C2A0B3416A36A1 /* Pods-gtownradio.debug.xcconfig */,
-				17351247348B65E6668EDD06 /* Pods-gtownradio.release.xcconfig */,
+				4B173B9321A5685B00010F90 /* AppDelegate.swift */,
+				4B173B9521A5685B00010F90 /* ViewController.swift */,
+				4B173B9721A5685B00010F90 /* Main.storyboard */,
+				4B173B9A21A5685C00010F90 /* Assets.xcassets */,
+				4B173B9C21A5685C00010F90 /* Info.plist */,
 			);
-			name = Pods;
+			path = gtowntv;
 			sourceTree = "<group>";
 		};
 		4B30193D2143059800DD05D4 = {
 			isa = PBXGroup;
 			children = (
 				4B3019482143059800DD05D4 /* gtownradio */,
+				4B173B9221A5685B00010F90 /* gtowntv */,
 				4B3019472143059800DD05D4 /* Products */,
 				71D616BA8664C8A604A81E37 /* Frameworks */,
-				104E43ABA6E9C80398198A55 /* Pods */,
+				F155D4FB359E4645E938621C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4B3019462143059800DD05D4 /* gtownradio.app */,
+				4B173B9121A5685B00010F90 /* gtowntv.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,19 +156,49 @@
 			isa = PBXGroup;
 			children = (
 				4B8A01942186631300DFFAB9 /* MediaPlayer.framework */,
-				B71AA1A7D30488B1E015D84F /* libPods-gtownradio.a */,
+				E1B2D2A7A1FCD12E626B1F4B /* libPods-gtownradio.a */,
+				64C518F3102B071642C98990 /* libPods-gtowntv.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F155D4FB359E4645E938621C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD657D3A45ECF000A77F9A27 /* Pods-gtownradio.debug.xcconfig */,
+				7526D5A39D7B23997515A4CA /* Pods-gtownradio.release.xcconfig */,
+				FE42EB39EFDDF5D40E348D6E /* Pods-gtowntv.debug.xcconfig */,
+				BC30118A05E26BBA560F7A21 /* Pods-gtowntv.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4B173B9021A5685B00010F90 /* gtowntv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B173B9F21A5685C00010F90 /* Build configuration list for PBXNativeTarget "gtowntv" */;
+			buildPhases = (
+				4E77501D4646C86151DAF567 /* [CP] Check Pods Manifest.lock */,
+				4B173B8D21A5685B00010F90 /* Sources */,
+				4B173B8E21A5685B00010F90 /* Frameworks */,
+				4B173B8F21A5685B00010F90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gtowntv;
+			productName = gtowntv;
+			productReference = 4B173B9121A5685B00010F90 /* gtowntv.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4B3019452143059800DD05D4 /* gtownradio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B30195A2143059A00DD05D4 /* Build configuration list for PBXNativeTarget "gtownradio" */;
 			buildPhases = (
-				BAFDAAE4AE8A0FBB9A3323F2 /* [CP] Check Pods Manifest.lock */,
+				CC16E8C854834E3F60334B0D /* [CP] Check Pods Manifest.lock */,
 				4B3019422143059800DD05D4 /* Sources */,
 				4B3019432143059800DD05D4 /* Frameworks */,
 				4B3019442143059800DD05D4 /* Resources */,
@@ -165,6 +222,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Samuel Maffei";
 				TargetAttributes = {
+					4B173B9021A5685B00010F90 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					4B3019452143059800DD05D4 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
@@ -189,11 +249,21 @@
 			projectRoot = "";
 			targets = (
 				4B3019452143059800DD05D4 /* gtownradio */,
+				4B173B9021A5685B00010F90 /* gtowntv */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4B173B8F21A5685B00010F90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B173B9B21A5685C00010F90 /* Assets.xcassets in Resources */,
+				4B173B9921A5685B00010F90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B3019442143059800DD05D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,16 +279,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BAFDAAE4AE8A0FBB9A3323F2 /* [CP] Check Pods Manifest.lock */ = {
+		4E77501D4646C86151DAF567 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gtowntv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC16E8C854834E3F60334B0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-gtownradio-checkManifestLockResult.txt",
 			);
@@ -230,6 +326,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B173B8D21A5685B00010F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B173B9621A5685B00010F90 /* ViewController.swift in Sources */,
+				4B173B9421A5685B00010F90 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B3019422143059800DD05D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +356,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4B173B9721A5685B00010F90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B173B9821A5685B00010F90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		4B30194F2143059800DD05D4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +391,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4B173B9D21A5685C00010F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE42EB39EFDDF5D40E348D6E /* Pods-gtowntv.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BB7XDTTD86;
+				INFOPLIST_FILE = gtowntv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammaffei.gtowntv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		4B173B9E21A5685C00010F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC30118A05E26BBA560F7A21 /* Pods-gtowntv.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BB7XDTTD86;
+				INFOPLIST_FILE = gtowntv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammaffei.gtowntv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
 		4B3019582143059A00DD05D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,7 +551,7 @@
 		};
 		4B30195B2143059A00DD05D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 405B97BB53C2A0B3416A36A1 /* Pods-gtownradio.debug.xcconfig */;
+			baseConfigurationReference = BD657D3A45ECF000A77F9A27 /* Pods-gtownradio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,7 +571,7 @@
 		};
 		4B30195C2143059A00DD05D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17351247348B65E6668EDD06 /* Pods-gtownradio.release.xcconfig */;
+			baseConfigurationReference = 7526D5A39D7B23997515A4CA /* Pods-gtownradio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -435,6 +592,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4B173B9F21A5685C00010F90 /* Build configuration list for PBXNativeTarget "gtowntv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B173B9D21A5685C00010F90 /* Debug */,
+				4B173B9E21A5685C00010F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4B3019412143059800DD05D4 /* Build configuration list for PBXProject "gtownradio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
