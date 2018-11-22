@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31FAF44CD077063C40D18960 /* libPods-gtowntv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C518F3102B071642C98990 /* libPods-gtowntv.a */; };
+		38338C51FEAEBC47818D86B5 /* libPods-gtownradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942C18B7E39141AFF24370DB /* libPods-gtownradio.a */; };
 		4B0B6A6B2148983F008F1020 /* LastFM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B6A6A2148983F008F1020 /* LastFM.swift */; };
 		4B173B9421A5685B00010F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9321A5685B00010F90 /* AppDelegate.swift */; };
 		4B173B9621A5685B00010F90 /* GTownTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9521A5685B00010F90 /* GTownTVViewController.swift */; };
@@ -33,11 +33,18 @@
 		4B80916A215B09A000C09471 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4B809166215B09A000C09471 /* README.md */; };
 		4B8A019321865C2B00DFFAB9 /* LightNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A019221865C2B00DFFAB9 /* LightNavController.swift */; };
 		4B8A01952186631300DFFAB9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8A01942186631300DFFAB9 /* MediaPlayer.framework */; };
+		4BCF1DEB21A625B8004DB8C0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF1DE721A625B1004DB8C0 /* Reachability.swift */; };
+		4BCF1DEC21A625B8004DB8C0 /* FRadioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF1DE821A625B1004DB8C0 /* FRadioAPI.swift */; };
+		4BCF1DED21A625B8004DB8C0 /* FRadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF1DE921A625B1004DB8C0 /* FRadioPlayer.swift */; };
+		4BCF1DEE21A625B9004DB8C0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF1DE721A625B1004DB8C0 /* Reachability.swift */; };
+		4BCF1DEF21A625B9004DB8C0 /* FRadioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF1DE821A625B1004DB8C0 /* FRadioAPI.swift */; };
+		4BCF1DF021A625B9004DB8C0 /* FRadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF1DE921A625B1004DB8C0 /* FRadioPlayer.swift */; };
 		4BE9195D2147294F0034E739 /* NowPlayingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9195C2147294F0034E739 /* NowPlayingTask.swift */; };
-		C5D25FC009221D1F1EA77B01 /* libPods-gtownradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2D2A7A1FCD12E626B1F4B /* libPods-gtownradio.a */; };
+		E83DD5D2C15722C61B72FE85 /* libPods-gtowntv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C496C73CE5FC1A8B2B8E68 /* libPods-gtowntv.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BD3CA4AFB11B9CFB01AB7A3 /* Pods-gtownradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.release.xcconfig"; sourceTree = "<group>"; };
 		4B0B6A6A2148983F008F1020 /* LastFM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LastFM.swift; path = Shared/LastFM.swift; sourceTree = SOURCE_ROOT; };
 		4B173B9121A5685B00010F90 /* gtowntv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gtowntv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B173B9321A5685B00010F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,13 +70,15 @@
 		4B809166215B09A000C09471 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4B8A019221865C2B00DFFAB9 /* LightNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LightNavController.swift; path = GTownRadio/LightNavController.swift; sourceTree = SOURCE_ROOT; };
 		4B8A01942186631300DFFAB9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4BCF1DE721A625B1004DB8C0 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4BCF1DE821A625B1004DB8C0 /* FRadioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRadioAPI.swift; sourceTree = "<group>"; };
+		4BCF1DE921A625B1004DB8C0 /* FRadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRadioPlayer.swift; sourceTree = "<group>"; };
 		4BE9195C2147294F0034E739 /* NowPlayingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingTask.swift; path = Shared/NowPlayingTask.swift; sourceTree = SOURCE_ROOT; };
-		64C518F3102B071642C98990 /* libPods-gtowntv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtowntv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7526D5A39D7B23997515A4CA /* Pods-gtownradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.release.xcconfig"; sourceTree = "<group>"; };
-		BC30118A05E26BBA560F7A21 /* Pods-gtowntv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtowntv.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtowntv/Pods-gtowntv.release.xcconfig"; sourceTree = "<group>"; };
-		BD657D3A45ECF000A77F9A27 /* Pods-gtownradio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.debug.xcconfig"; sourceTree = "<group>"; };
-		E1B2D2A7A1FCD12E626B1F4B /* libPods-gtownradio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtownradio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE42EB39EFDDF5D40E348D6E /* Pods-gtowntv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtowntv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtowntv/Pods-gtowntv.debug.xcconfig"; sourceTree = "<group>"; };
+		57C496C73CE5FC1A8B2B8E68 /* libPods-gtowntv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtowntv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF183FAD9E33E7CF9279289 /* Pods-gtowntv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtowntv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtowntv/Pods-gtowntv.debug.xcconfig"; sourceTree = "<group>"; };
+		8C6C0DDBDDE946F5F2F5A50E /* Pods-gtownradio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtownradio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gtownradio/Pods-gtownradio.debug.xcconfig"; sourceTree = "<group>"; };
+		942C18B7E39141AFF24370DB /* libPods-gtownradio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gtownradio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DC537C7207766C5202F00B /* Pods-gtowntv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gtowntv.release.xcconfig"; path = "Pods/Target Support Files/Pods-gtowntv/Pods-gtowntv.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31FAF44CD077063C40D18960 /* libPods-gtowntv.a in Frameworks */,
+				E83DD5D2C15722C61B72FE85 /* libPods-gtowntv.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8A01952186631300DFFAB9 /* MediaPlayer.framework in Frameworks */,
-				C5D25FC009221D1F1EA77B01 /* libPods-gtownradio.a in Frameworks */,
+				38338C51FEAEBC47818D86B5 /* libPods-gtownradio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +123,7 @@
 				4B173B9221A5685B00010F90 /* gtowntv */,
 				4B3019472143059800DD05D4 /* Products */,
 				71D616BA8664C8A604A81E37 /* Frameworks */,
-				F155D4FB359E4645E938621C /* Pods */,
+				6290283318C76F321C213CC0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +158,7 @@
 		4B6D7C2E21A56C78005827BD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4BCF1DEA21A625B1004DB8C0 /* FRadioPlayer */,
 				4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */,
 				4B417D8D2157D7F5008F2262 /* StringExtension.swift */,
 				4B0B6A6A2148983F008F1020 /* LastFM.swift */,
@@ -167,25 +177,36 @@
 			path = GTownRadio/SVGPlayButton;
 			sourceTree = SOURCE_ROOT;
 		};
+		4BCF1DEA21A625B1004DB8C0 /* FRadioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				4BCF1DE721A625B1004DB8C0 /* Reachability.swift */,
+				4BCF1DE821A625B1004DB8C0 /* FRadioAPI.swift */,
+				4BCF1DE921A625B1004DB8C0 /* FRadioPlayer.swift */,
+			);
+			name = FRadioPlayer;
+			path = /Users/smaffei/Projects/GTownRadio/Shared/FRadioPlayer;
+			sourceTree = "<absolute>";
+		};
+		6290283318C76F321C213CC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C6C0DDBDDE946F5F2F5A50E /* Pods-gtownradio.debug.xcconfig */,
+				2BD3CA4AFB11B9CFB01AB7A3 /* Pods-gtownradio.release.xcconfig */,
+				7FF183FAD9E33E7CF9279289 /* Pods-gtowntv.debug.xcconfig */,
+				C3DC537C7207766C5202F00B /* Pods-gtowntv.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		71D616BA8664C8A604A81E37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4B8A01942186631300DFFAB9 /* MediaPlayer.framework */,
-				E1B2D2A7A1FCD12E626B1F4B /* libPods-gtownradio.a */,
-				64C518F3102B071642C98990 /* libPods-gtowntv.a */,
+				942C18B7E39141AFF24370DB /* libPods-gtownradio.a */,
+				57C496C73CE5FC1A8B2B8E68 /* libPods-gtowntv.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F155D4FB359E4645E938621C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BD657D3A45ECF000A77F9A27 /* Pods-gtownradio.debug.xcconfig */,
-				7526D5A39D7B23997515A4CA /* Pods-gtownradio.release.xcconfig */,
-				FE42EB39EFDDF5D40E348D6E /* Pods-gtowntv.debug.xcconfig */,
-				BC30118A05E26BBA560F7A21 /* Pods-gtowntv.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B173B9F21A5685C00010F90 /* Build configuration list for PBXNativeTarget "gtowntv" */;
 			buildPhases = (
-				4E77501D4646C86151DAF567 /* [CP] Check Pods Manifest.lock */,
+				8BE77D1039090762BB709CC4 /* [CP] Check Pods Manifest.lock */,
 				4B173B8D21A5685B00010F90 /* Sources */,
 				4B173B8E21A5685B00010F90 /* Frameworks */,
 				4B173B8F21A5685B00010F90 /* Resources */,
@@ -213,7 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B30195A2143059A00DD05D4 /* Build configuration list for PBXNativeTarget "gtownradio" */;
 			buildPhases = (
-				CC16E8C854834E3F60334B0D /* [CP] Check Pods Manifest.lock */,
+				DA87AC7455C853E8FF21964F /* [CP] Check Pods Manifest.lock */,
 				4B3019422143059800DD05D4 /* Sources */,
 				4B3019432143059800DD05D4 /* Frameworks */,
 				4B3019442143059800DD05D4 /* Resources */,
@@ -295,7 +316,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E77501D4646C86151DAF567 /* [CP] Check Pods Manifest.lock */ = {
+		8BE77D1039090762BB709CC4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,7 +334,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC16E8C854834E3F60334B0D /* [CP] Check Pods Manifest.lock */ = {
+		DA87AC7455C853E8FF21964F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,6 +359,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCF1DF021A625B9004DB8C0 /* FRadioPlayer.swift in Sources */,
+				4BCF1DEE21A625B9004DB8C0 /* Reachability.swift in Sources */,
+				4BCF1DEF21A625B9004DB8C0 /* FRadioAPI.swift in Sources */,
 				4B6D7C3221A56CC8005827BD /* NowPlayingTask.swift in Sources */,
 				4B6D7C3021A56CA7005827BD /* StringExtension.swift in Sources */,
 				4B173B9621A5685B00010F90 /* GTownTVViewController.swift in Sources */,
@@ -353,6 +377,7 @@
 			files = (
 				4B809169215B09A000C09471 /* SVGPlayButton.swift in Sources */,
 				4B30194A2143059800DD05D4 /* AppDelegate.swift in Sources */,
+				4BCF1DEB21A625B8004DB8C0 /* Reachability.swift in Sources */,
 				4B417D8E2157D7F5008F2262 /* StringExtension.swift in Sources */,
 				4B17B060218A51EA00B6F3A6 /* SettingsViewController.swift in Sources */,
 				4BE9195D2147294F0034E739 /* NowPlayingTask.swift in Sources */,
@@ -360,8 +385,10 @@
 				4B30194C2143059800DD05D4 /* GTownViewController.swift in Sources */,
 				4B17B062218A70A200B6F3A6 /* UserDefaults_GTownExtension.swift in Sources */,
 				4B417D90215804CB008F2262 /* NowPlayingViewController.swift in Sources */,
+				4BCF1DEC21A625B8004DB8C0 /* FRadioAPI.swift in Sources */,
 				4B0B6A6B2148983F008F1020 /* LastFM.swift in Sources */,
 				4B17B05E218A4BB700B6F3A6 /* Constants.swift in Sources */,
+				4BCF1DED21A625B8004DB8C0 /* FRadioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +440,7 @@
 /* Begin XCBuildConfiguration section */
 		4B173B9D21A5685C00010F90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE42EB39EFDDF5D40E348D6E /* Pods-gtowntv.debug.xcconfig */;
+			baseConfigurationReference = 7FF183FAD9E33E7CF9279289 /* Pods-gtowntv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -435,7 +462,7 @@
 		};
 		4B173B9E21A5685C00010F90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC30118A05E26BBA560F7A21 /* Pods-gtowntv.release.xcconfig */;
+			baseConfigurationReference = C3DC537C7207766C5202F00B /* Pods-gtowntv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -571,7 +598,7 @@
 		};
 		4B30195B2143059A00DD05D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD657D3A45ECF000A77F9A27 /* Pods-gtownradio.debug.xcconfig */;
+			baseConfigurationReference = 8C6C0DDBDDE946F5F2F5A50E /* Pods-gtownradio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,7 +618,7 @@
 		};
 		4B30195C2143059A00DD05D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7526D5A39D7B23997515A4CA /* Pods-gtownradio.release.xcconfig */;
+			baseConfigurationReference = 2BD3CA4AFB11B9CFB01AB7A3 /* Pods-gtownradio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

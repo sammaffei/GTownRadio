@@ -11,7 +11,6 @@ end
 
 target 'gtownradio' do
 	platform :ios, '9.0'
-	pod 'FRadioPlayer'
 	shared_pods
 
 end

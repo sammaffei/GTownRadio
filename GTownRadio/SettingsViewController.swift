@@ -9,7 +9,6 @@
 //
 
 import UIKit
-import FRadioPlayer
 
 class SettingsViewController : UITableViewController
     {

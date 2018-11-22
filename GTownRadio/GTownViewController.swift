@@ -12,7 +12,6 @@ import StoreKit
 
 import Alamofire
 import AlamoFuzi
-import FRadioPlayer
 
 class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPresentationControllerDelegate {
     
