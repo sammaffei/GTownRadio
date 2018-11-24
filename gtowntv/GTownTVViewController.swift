@@ -79,5 +79,18 @@ class GTownTVViewController: UIViewController, FRadioPlayerDelegate {
         }
     }
     
+    override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        
+        // Add support for play / pause button. People naturally want to hit the play
+        // button and don't necessarily think of hitting the touch area.
+        
+        if let anyPress = presses.first, anyPress.type == .playPause
+            {
+            togglePlaying(sender: playPauseButton)
+            }
+        
+        
+    }
+    
 }
 
