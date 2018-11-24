@@ -1,6 +1,6 @@
 
 # G-Town Radio Project
-iOS App for G-Town Radio
+iOS / tvOS App for G-Town Radio
 
 ### Building the Application
 
