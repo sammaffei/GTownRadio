@@ -447,7 +447,7 @@
 			baseConfigurationReference = 7FF183FAD9E33E7CF9279289 /* Pods-gtowntv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "TV Launch Image";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB7XDTTD86;
 				INFOPLIST_FILE = gtowntv/Info.plist;
@@ -469,7 +469,7 @@
 			baseConfigurationReference = C3DC537C7207766C5202F00B /* Pods-gtowntv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "TV Launch Image";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BB7XDTTD86;
 				INFOPLIST_FILE = gtowntv/Info.plist;
