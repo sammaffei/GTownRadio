@@ -118,9 +118,6 @@ class GTownViewController: UIViewController, FRadioPlayerDelegate, UIPopoverPres
                 popPresenter.backgroundColor = settingsVC.view.backgroundColor
                 
                 popPresenter.delegate = self                
-                
-                break
-            
             
             default:
                 break

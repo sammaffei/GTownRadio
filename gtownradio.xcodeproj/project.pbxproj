@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38338C51FEAEBC47818D86B5 /* libPods-gtownradio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942C18B7E39141AFF24370DB /* libPods-gtownradio.a */; };
+		4B0005F921A9A343008327C5 /* SVGPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B809165215B09A000C09471 /* SVGPlayButton.swift */; };
 		4B0B6A6B2148983F008F1020 /* LastFM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B6A6A2148983F008F1020 /* LastFM.swift */; };
 		4B173B9621A5685B00010F90 /* GTownTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B173B9521A5685B00010F90 /* GTownTVViewController.swift */; };
 		4B173B9921A5685B00010F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B173B9721A5685B00010F90 /* Main.storyboard */; };
@@ -367,6 +368,7 @@
 				4B6D7C3221A56CC8005827BD /* NowPlayingTask.swift in Sources */,
 				4B6D7C3021A56CA7005827BD /* StringExtension.swift in Sources */,
 				4BCF1DF121A62E0B004DB8C0 /* Constants.swift in Sources */,
+				4B0005F921A9A343008327C5 /* SVGPlayButton.swift in Sources */,
 				4B173B9621A5685B00010F90 /* GTownTVViewController.swift in Sources */,
 				4B6D7C2F21A56C90005827BD /* NowPlayingViewController.swift in Sources */,
 				4B6D7C3121A56CB2005827BD /* LastFM.swift in Sources */,
