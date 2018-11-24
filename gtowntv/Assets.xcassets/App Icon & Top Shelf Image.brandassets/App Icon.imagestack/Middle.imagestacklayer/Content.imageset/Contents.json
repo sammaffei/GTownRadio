@@ -2,10 +2,12 @@
   "images" : [
     {
       "idiom" : "tv",
+      "filename" : "gtowntv_icon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "tv",
+      "filename" : "gtowntv_icon@2x.png",
       "scale" : "2x"
     }
   ],
