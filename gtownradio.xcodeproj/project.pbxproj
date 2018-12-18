@@ -64,7 +64,7 @@
 		4B3019552143059A00DD05D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3019572143059A00DD05D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B417D8D2157D7F5008F2262 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Shared/StringExtension.swift; sourceTree = SOURCE_ROOT; };
-		4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingViewController.swift; path = Shared/NowPlayingViewController.swift; sourceTree = SOURCE_ROOT; };
+		4B417D8F215804CB008F2262 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingViewController.swift; path = Shared/NowPlayingViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B4850E621A6161400E2933B /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Base; path = Base.lproj/loading.gif; sourceTree = "<group>"; };
 		4B4C9DD52177A62900EB99A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Base; path = GTownRadio/Base.lproj/loading.gif; sourceTree = SOURCE_ROOT; };
 		4B809165215B09A000C09471 /* SVGPlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPlayButton.swift; sourceTree = "<group>"; };
