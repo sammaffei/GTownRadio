@@ -11,6 +11,7 @@ import UIKit
 class GTownTVViewController: UIViewController, FRadioPlayerDelegate {
     
     @IBOutlet var playPauseButton : SVGPlayButton!
+    @IBOutlet var appInfoLabel : UILabel!
 
     var nowPlayingVC : NowPlayingViewController?
     
@@ -44,6 +45,15 @@ class GTownTVViewController: UIViewController, FRadioPlayerDelegate {
         
     }
     
+    private func setVersionAppInfoText()
+        {
+        guard let infoText = appInfoLabel.text
+            else {return}
+        
+        appInfoLabel.text = (infoText as NSString).replacingOccurrences(of: "#vers#",
+                                                                        with: Globals.shared.buildInfoStr)
+        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -54,6 +64,8 @@ class GTownTVViewController: UIViewController, FRadioPlayerDelegate {
         
         playPauseButton.addTarget(self, action: #selector(togglePlaying(sender:)),
                                   for: UIControlEvents.primaryActionTriggered)
+        
+        setVersionAppInfoText()
     }
     
     

@@ -16,20 +16,13 @@ class SettingsViewController : UITableViewController
     @IBOutlet var infoTextView : UITextView!
     
     private func setVersionAppInfoText()
-    {
+        {
         guard let infoText = infoTextView.text
             else {return}
         
-        var replaceStr = "????"
-        
-        if let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString"),
-            let buildNum = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion")
-            {
-            replaceStr = "\(version) (\(buildNum))"
-            }
-        
-        infoTextView.text = (infoText as NSString).replacingOccurrences(of: "#vers#", with: replaceStr)
-    }
+        infoTextView.text = (infoText as NSString).replacingOccurrences(of: "#vers#",
+                                                                        with: Globals.shared.buildInfoStr)
+        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
